@@ -1,0 +1,45 @@
+
+/* Media queries para diferentes tamaños de pantalla */
+@media only screen and (max-width: 768px) {
+    /* Estilos para tablet */
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Estilos para celular */
+    header {
+        padding: 5px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}

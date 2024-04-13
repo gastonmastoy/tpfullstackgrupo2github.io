@@ -1,0 +1,39 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente para el cuerpo del documento */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    padding: 20px; /* Espaciado interno del encabezado */
+    text-align: center; /* Alineación del texto centrada */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los estilos de lista predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos de lista en línea */
+    margin-right: 20px; /* Espacio entre elementos de lista */
+}
+
+nav ul li a {
+    color: #fff; /* Color del enlace del menú */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+main {
+    padding: 20px; /* Espaciado interno del contenido principal */
+}
+
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto del pie de página */
+    padding: 20px; /* Espaciado interno del pie de página */
+    text-align: center; /* Alineación del texto centrada */
+}
