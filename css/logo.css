@@ -25,3 +25,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 300; /* Use a thinner font weight */
 }
+
+.logoFooter{
+    max-width: 10%;
+}
