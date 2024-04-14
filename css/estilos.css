@@ -1,14 +1,22 @@
+/* Variables de color */
+:root {
+    --primary-bg: #fff; /* Primary background */
+    --secondary-bg: #f8bcbc; /* Secondary background */
+    --primary-font: #000000; /* Primary font */
+    --secondary-font: #fffff; /* Secondary font */
+}
+
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif; /* Fuente para el cuerpo del documento */
+    font-family: Roboto, sans-serif; /* Fuente para el cuerpo del documento */
     margin: 0; /* Elimina los márgenes predeterminados */
     padding: 0; /* Elimina el relleno predeterminado */
+
 }
 
 header {
-    background-color: #333; /* Color de fondo del encabezado */
-    color: #fff; /* Color del texto del encabezado */
-    padding: 20px; /* Espaciado interno del encabezado */
+    background-color: var(--primary-bg); /* Color de fondo del encabezado */
+    color: var(--primary-font); /* Color del texto del encabezado */
     text-align: center; /* Alineación del texto centrada */
 }
 
@@ -23,8 +31,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* Color del enlace del menú */
+    color: var(--primary-font); /* Color del enlace del menú */
     text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+nav ul li a:hover {
+    color: var(--primary-font ); /* Change color on hover */
 }
 
 main {
@@ -32,8 +44,8 @@ main {
 }
 
 footer {
-    background-color: #333; /* Color de fondo del pie de página */
-    color: #fff; /* Color del texto del pie de página */
+    background-color: var(--secondary-bg); /* Color de fondo del pie de página */
+    color: var(--primary-font); /* Color del texto del pie de página */
     padding: 20px; /* Espaciado interno del pie de página */
     text-align: center; /* Alineación del texto centrada */
 }
