@@ -1,3 +1,13 @@
+:root {
+  --primary-color: #b18eb6;
+  --secondary-color: #9e8ddb;
+  --background-color: #c7b8ff;
+  --hover-color: #9e8ddb;
+  --text-color: #6a6a6a;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --hover-shadow-color: rgba(0, 0, 0, 0.4);
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -23,13 +33,13 @@
   border-radius: 6px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 10px var(--shadow-color);
   cursor: default;
   transition: all 400ms ease;
 }
 
 .card__container:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 20px var(--hover-shadow-color);
   transform: translateY(-3%);
 }
 
@@ -38,13 +48,14 @@
   height: 210px;
   object-fit: cover;
 }
+
 .card__data {
   text-align: center;
 }
 
 .card__description {
   line-height: 1.5;
-  color: #6a6a6a;
+  color: var(--text-color);
 }
 
 .card__title {
@@ -58,15 +69,33 @@
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #b18eb6;
-  border: 1px solid #b18eb6;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   border-radius: 4px;
   transition: all 400ms ease;
 }
 
 .card__button:hover {
-  background-color: #b18eb6;
+  background-color: var(--primary-color);
   color: #fff;
+}
+
+.card__button__addtocart {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--background-color);
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+
+.card__button__addtocart:hover {
+  background-color: var(--hover-color);
+  color: #ffffff;
 }
 
 /* ------ Breackpoints  ------ */
