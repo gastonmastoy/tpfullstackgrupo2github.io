@@ -1,5 +1,51 @@
 /* Todos los estilos para el Newsletter */
 
-.newsletter{
-    text-align: center;
+form{
+    border: 1px solid lightgray;
+    border-radius: 1px;
+    background-color: lightgrey;
+    padding: 1%;
+}
+
+input[type=text] {
+    padding: 0.5%;
+    margin: 0.5%;
+    width: 60%;
+}
+
+input[type=email], [type=tel] {
+    padding: 0.5%;
+    margin: 0.5%;
+    width: 30%;
+}
+
+textarea {
+    width: 80%;
+    padding: 0.5%;
+    margin: 0.5%;
+}
+
+/* form.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;row
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} */
+
+.container {
+    display: grid; /* Habilito grid */
+    grid-template-columns : 50% 50%;
+    width: 95%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.item1, .item2 {
+    padding: 10px;
+    border: 1px solid #ccc;
 }
