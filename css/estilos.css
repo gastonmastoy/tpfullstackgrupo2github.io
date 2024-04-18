@@ -49,3 +49,39 @@ footer {
     padding: 20px; /* Espaciado interno del pie de página */
     text-align: center; /* Alineación del texto centrada */
 }
+
+/* Redes sociales */
+.redsoc {
+    color: black;
+    font-size: 2vw;
+    margin: 0.5%;
+    transition: all 0.3s ease-in;
+}
+/* Cambia color icono Redes sociales */
+.redsoc:hover{
+    animation-name: cambiarColor;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+/* Prueba Cambia colores icono Redes sociales */
+@keyframes cambiarColor {
+    0% {color: red;}
+    50% {color: green;}
+    75% {color: blue;}
+    100% {color: black;}
+   }
+/* Whatsapp */
+   .whatsapp{
+    position:fixed;
+    width: 4%;
+    bottom: 2.5%; right: 3%;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+/* Whatsapp cambia tamaño cuando se pasa por arriba */
+.whatsapp:hover{
+    transform: scale(1.5, 1.5);
+    transition: all 0.3s ease-in-out;
+    /* width: 5%; */
+}
