@@ -1,26 +1,99 @@
-body{
+/* Variables de color */
+:root {
+    --primary-bg: #fff; /* Primary background */
+    --secondary-bg: #b18eb6; /* Secondary background */
+    --primary-font: #000000; /* Primary font */
+    --secondary-font: #fffff; /* Secondary font */
+}
+
+*{
     margin:0;
     padding:0;
+}
+
+body{
+    background:#f4edfa ;
     font-family: roboto, sans-serif;
-    background: linear-gradient(150deg, #6c3483, #d2d6e4);
-    height: 100vh;
+
+}
+header{
+    background: #f4edfa;
+    display: block;
+    box-sizing: border-box;
+    
+}
+
+.block_logo{
+    text-align:center;
+}
+
+.block_logo .logo{
+    width: auto;
+    height: 200px;
+}
+
+.barra_nav ul{
+    margin: auto;
+    padding:25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style-type: none;
+
+    
+    
+}
+
+.barra_nav ul li{
+    
+    border: 1px #f4edfa solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    transition: .3s ease all;
+
 
 }
 
+.barra_nav ul li a{
+    text-decoration: none;
+    color:rgb(38, 65, 71);
+
+}
+
+.barra_nav ul li:hover{
+    border: 1px #f4edfa solid;
+    box-shadow: rgb(82, 33, 102) 2px 3px 4px 3px;
+
+}
+
+
+
+
+main{
+    max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+    background:#f4edfa ;
+    height: 100vh;
+}
 
 .mi_login{
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
-    width: 400px;
+    width: 50%;
     transform: translate(-50%,-50%);
     background: white;
     border-radius: 10px;
+    box-shadow: rgb(0, 0, 0) 2px 2px 3px 2px;
 
 }
 .mi_login h1{
+    
     text-align:center;
-    padding: 0 0 20px 0;
+    padding: 5px 0 5px 0;
     border-bottom: 2px solid silver;
 
 }
@@ -36,7 +109,8 @@ form .username {
 
 }
 
-.username input{
+.username input,
+.contrasenia input{
     width:100%;
     padding: 5px 5px;
     height: 40px;
@@ -47,60 +121,7 @@ form .username {
 
 }
 
-.username label{
-    position: absolute;
-    top:50%;
-    left: 5px;
-    color:#adadad;
-    transform: translateY(-50%);
-    font-size:16px;
-    pointer-events: none;
-    transition: .5s; 
-}
-
-.username span::before{
-    content:'';
-    position: absolute;
-    top: 40px;
-    left:0;
-    width: 100%;
-    height: 2px;
-    background: #6c3483;
-    transition: .5s;
-    
-}
-
-
-.username input:focus~label,
-.username input:focus~label{
-    top: -5px;
-    color:#6c3483;
-
-}
-
-.username input:focus~span::before,
-.username input:focus~span::before{
-    width:100%;
-}
-
-form .contrasenia {
-    position: relative;
-    border-bottom:2px solid #adadad;
-    margin: 30px 0;
-
-}
-
-.contrasenia input{
-    width: 100%;
-    padding:0 5px;
-    height: 40px;
-    font-size: 16px;
-    border:none;
-    background:none;
-    outline:none;
-
-}
-
+.username label,
 .contrasenia label{
     position: absolute;
     top:50%;
@@ -112,6 +133,7 @@ form .contrasenia {
     transition: .5s; 
 }
 
+.username span::before,
 .contrasenia span::before{
     content:'';
     position: absolute;
@@ -125,16 +147,23 @@ form .contrasenia {
 }
 
 
-.contrasenia input:focus~label,
+.username input:focus~label,
 .contrasenia input:focus~label{
     top: -5px;
     color:#6c3483;
 
 }
 
-.contrasenia input:focus~span::before,
+.username input:focus~span::before,
 .contrasenia input:focus~span::before{
     width:100%;
+}
+
+form .contrasenia {
+    position: relative;
+    border-bottom:2px solid #adadad;
+    margin: 30px 0;
+
 }
 
 .recuperar_contr{
@@ -170,7 +199,8 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     color:aqua;
-    border-color: rgb(29, 2, 29);
+    /*border-color: rgb(29, 2, 29);*/
+    box-shadow: rgb(82, 33, 102) 2px 2px 3px 2px;
     transition: .5s;
 
 }
@@ -192,3 +222,30 @@ input[type="submit"]:hover{
     color:#6c3483;
 
 }
+
+footer {
+    margin:auto;
+    background-color: var(--secondary-bg); /* Color de fondo del pie de página */
+    color: var(--primary-font); /* Color del texto del pie de página */
+    padding: 20px; /* Espaciado interno del pie de página */
+    text-align: center; /* Alineación del texto centrada */
+    box-sizing:border-box;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- 
+@media screen and (max-width: 800px) {
+	.mi_login{
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        width: 50%;
+        transform: translate(-50%,-50%);
+        background: white;
+        border-radius: 10px;
+        box-shadow: rgb(0, 0, 0) 2px 2px 3px 2px;
+
+	
+    }
+
+}  */

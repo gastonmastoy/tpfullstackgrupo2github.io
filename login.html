@@ -5,32 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./css/css_login/estilo_login.css">
+    
 </head>
 <body>
+    <header>
+        <div class="block_logo">
+            
+            <img src="./img/logo/jacaranda_logo.png" alt="Logo Jacarandá" class="logo"> <!-- Logo de la tienda -->
 
-    <div class="mi_login">
-        <h1>Inicio de secion</h1>
-        <form method="post">
-            <div class="username">
-                <input type="text"id="usuario"name="usuario"required>
-                <label for="usuario">Nombre de Usuario</label>
-            </div>
-            <div class="contrasenia">
-                <input type="password"id="contr_usuario"name="cont_usuario"required>
-                <label for="contr_usuario">Contraseña</label>
-            </div>
-            <div class="recuperar_contr">
-                <a href="#">¿Olvido su Contraseña?</a>
-            </div>
-            <div class="Inicio">
-                <input type="submit"value="Inicio">
-            </div>
-            <div class="registrarse">
-                <a href="#">Quiero registrarme</a>
-            </div>
+        </div>
 
-        </form>
-    </div>
+        <div class="block_barra_nav">
+            
+            <nav class="barra_nav">
+                <ul>
+                    <li><a href="#">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                    <li><a href="#">Productos</a></li> <!-- Enlace a la página de productos -->
+                    <li><a href="#">Contacto</a></li> <!-- Enlace al carrito de compras -->
+                    <li><a href="#">Carrito</a></li> <!-- Enlace a la página de contacto -->
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div class="mi_login">
+            <h1>Inicio de secion</h1>
+            <form method="post" action="">
+                <div class="username">
+                    <input type="text"id="usuario"name="usuario"required>
+                    <label for="usuario">Nombre de Usuario</label>
+                </div>
+                <div class="contrasenia">
+                    <input type="password"id="contr_usuario"name="cont_usuario"required>
+                    <label for="contr_usuario">Contraseña</label>
+                </div>
+                <div class="recuperar_contr">
+                    <a href="#">¿Olvido su Contraseña?</a>
+                </div>
+                <div class="Inicio">
+                    <input type="submit"value="Inicio" >
+                </div>
+                <div class="registrarse">
+                    <a href="#">Quiero registrarme</a>
+                </div>
     
+               
+    
+            </form>
+        </div>
+        <script src="./js/login.js"></script>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 E-commerce de cualquier cosa</p> <!-- Pie de página con información de derechos de autor -->
+        <img src="./img/logo/jacaranda_white.png" alt="Logo Jacarandá" class="logoFooter"> <!-- Logo de la tienda -->
+    </footer>
 </body>
 </html>
