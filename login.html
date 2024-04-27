@@ -28,33 +28,34 @@
 
         </div>
     </header>
-    <main>
-        <div class="mi_login">
-            <h1>Inicio de secion</h1>
-            <form method="post" action="">
-                <div class="username">
-                    <input type="text"id="usuario"name="usuario"required>
-                    <label for="usuario">Nombre de Usuario</label>
+    <main >
+        <div class="mi_formulario_login">
+            <h1 class="titulo">Inicio de secion</h1>
+            <form action="" class="formulario_login" id="formulario_login">
+                <!-- Grupo: Usuario -->
+                <div class="formulario__grupo" id="grupo__usuario_login">
+                    <input type="text"class="formulario__input" id="usuario_login"name="usuario_login">
+                    <label for="usuario_login">Nombre de Usuario</label>
                 </div>
-                <div class="contrasenia">
-                    <input type="password"id="contr_usuario"name="cont_usuario"required>
-                    <label for="contr_usuario">Contraseña</label>
+                <!-- Grupo: Contraseña -->
+                <div class="formulario__grupo" id="grupo__password_login">
+                    <input type="password"class="formulario__input" name="password_login" id="password_login">
+                    <label for="password_login">Contraseña</label>
                 </div>
+                <!--link para recuperar contraseña-->
                 <div class="recuperar_contr">
                     <a href="#">¿Olvido su Contraseña?</a>
                 </div>
-                <div class="Inicio">
-                    <input type="submit"value="Inicio" >
+                <!-- Boton submit Enviar-->
+                <div class="btn_enviar">
+                    <input type="submit"value="Enviar">
                 </div>
                 <div class="registrarse">
                     <a href="#">Quiero registrarme</a>
                 </div>
     
-               
-    
             </form>
         </div>
-        <script src="./js/login.js"></script>
     </main>
     
     <footer>
