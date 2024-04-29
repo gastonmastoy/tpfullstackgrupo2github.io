@@ -25,21 +25,10 @@ textarea {
     margin: 0.5%;
 }
 
-/* form.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;row
-    margin: 0 auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-} */
-
 .container {
     display: grid; /* Habilito grid */
-    grid-template-columns : 50% 50%;
-    width: 95%;
+    grid-template-columns: 50% 50%;
+    width: 97%;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -47,5 +36,6 @@ textarea {
 
 .item1, .item2 {
     padding: 10px;
+    margin: 2px;
     border: 1px solid #ccc;
 }
