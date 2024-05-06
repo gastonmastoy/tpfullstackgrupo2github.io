@@ -120,8 +120,6 @@ main{
 /*  ------ Grande ------ */
 @media (min-width: 1024px) {
   .card__container {
-    width: calc(
-      33.33% - 40px
-    ); /* Aproximadamente un tercio del ancho con márgenes */
+    width: calc(33.33% - 40px); /* Aproximadamente un tercio del ancho con márgenes */
   }
 }
