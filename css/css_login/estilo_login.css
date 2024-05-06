@@ -206,7 +206,7 @@ main{
     top: 50%;
     left: 5px;
     color:#adadad;
-    transform: translateY(-50%);
+   transform: translateY(-50%);
     font-size:16px;
     pointer-events: none;
     transition: .5s; 
@@ -236,7 +236,8 @@ main{
 }
 
 
-.formulario__grupo input:focus~label{
+.formulario__grupo input:focus ~ label,
+.formulario__grupo input:valid ~ label {
     top: -5px;
     color:#6c3483;
 
@@ -245,6 +246,8 @@ main{
 .formulario__grupo input:focus~span::before{
     width:100%;
 }
+
+
 
 
 /* estilo Formulario nuevo mensaje de error y checkpoit*/
