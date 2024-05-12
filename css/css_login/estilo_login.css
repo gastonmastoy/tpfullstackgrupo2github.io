@@ -4,6 +4,9 @@
     --secondary-bg: #b18eb6; /* Secondary background */
     --primary-font: #000000; /* Primary font */
     --secondary-font: #fffff; /* Secondary font */
+    --fondo-opcional: #f4edfa; /* fondo opcional al principal*/
+    --sombra-opcional: rgb(82, 33, 102); /* sombra opcional --sombra */
+    --sombra: #b18eb6; /*sombra suave */
 }
 
 *{
@@ -15,14 +18,13 @@
 body{
     max-width: 1024px;
     max-height: 768px;
-
-    background:#f4edfa ;
+    background: var(--primary-bg);
     font-family: roboto, sans-serif;
    
 }
 /* Estilo Header */
 header{
-    background: #f4edfa;
+    background: var(--primary-bg);
     display: block;
     box-sizing: border-box;
     
@@ -68,7 +70,7 @@ header{
 
 .barra_nav ul li:hover{
     border: 1px #f4edfa solid;
-    box-shadow: rgb(82, 33, 102) 2px 3px 4px 3px;
+    box-shadow: var(--sombra) 2px 3px 4px 3px;
 
 }
 
@@ -79,25 +81,22 @@ header{
 
 main{
     position: relative;
-    box-sizing: border-box;
     height: 100vh;
 }
 
 .mi_formulario{
-
-    width: 80%;
-    height: 90%;
-    position: absolute;
+    max-width: 80vh;
+    width: 800px;
+    height: 90vh;
     inset: 0;
     margin: auto;
     background: whitesmoke;
     border-radius: 10px;
-    box-shadow: rgb(68, 29, 112)  4px 4px 6px 4px;
+    box-shadow: var(--sombra)  4px 4px 6px 4px;
 
 }
 
 .titulo{
-    
     text-align:center;
     padding: 5px 0 5px 0;
     border-bottom: 2px solid silver;
@@ -109,30 +108,32 @@ main{
 	grid-template-columns: 1fr 1fr;
 	gap: 10px;
     padding: 0;
-    box-sizing: border-box;
+
 }
 
 /* paguina login*/
 
 .mi_formulario_login{
-    position: absolute;
-    width: 400px;
-    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 60vh;
+    min-height: 60vh;
     inset: 0;
     margin: auto;
     background: whitesmoke;
     border-radius: 10px;
-    box-shadow: rgb(68, 29, 112) 4px 4px 6px 4px;
+    box-shadow: var(--sombra) 4px 4px 6px 4px;
    
 }
 
 
 
 .formulario_login{
-    position: relative;
     display: block;
-	box-sizing: border-box;
-
+    
 }
 
 .caja_formulario_recu_cont_login,
@@ -179,7 +180,6 @@ main{
     width: auto;
     height: auto;
     border:1px;
-  
 
 }
 
@@ -212,17 +212,6 @@ main{
     transition: .5s; 
 }
 
-.formulario__grupo-activo label{
-    position: absolute;
-    top: -5px;
-    left: 5px;
-    color:#adadad;
-    transform: translateY(-50%);
-    font-size:16px;
-    pointer-events: none;
-    transition: .5s;
-}
-
 .formulario__grupo span::before{
     content:'';
     position: absolute;
@@ -239,6 +228,7 @@ main{
 .formulario__grupo input:focus ~ label,
 .formulario__grupo input:valid ~ label {
     top: -5px;
+    font-size: 12px;
     color:#6c3483;
 
 }
@@ -341,9 +331,7 @@ main{
 	padding: 0 15px;
 	border-radius: 10px;
 	display: none;
-
-	
-    
+   
 }
 
 .formulario__mensaje-exito-activo {
@@ -372,7 +360,7 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     color:aqua;
-    box-shadow: rgb(82, 33, 102) 2px 2px 3px 2px;
+    box-shadow: var(--sombra) 2px 2px 3px 2px;
     transition: .5s;
 
 }
