@@ -1,0 +1,22 @@
+.newsletter {
+    background-color: #f2f2f2;
+    padding: 2rem;
+    text-align: center;
+}
+
+.newsletter .title {
+    margin-bottom: 1rem;
+}
+
+.newsletter .form-inline {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter .form-inline .form-control {
+    width: 30rem;
+}
+
+.newsletter .form-inline .btn {
+    margin-left: 1rem;
+}
