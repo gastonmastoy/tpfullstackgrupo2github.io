@@ -11,7 +11,7 @@ Este proyecto es una aplicación web que busca [breve descripción del propósit
 - HTML
 - CSS
 - JavaScript
-- [Otras tecnologías utilizadas]
+- 
 
 ## Estructura del Proyecto
 
