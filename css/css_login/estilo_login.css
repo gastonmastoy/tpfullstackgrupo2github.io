@@ -85,9 +85,9 @@ main{
 }
 
 .mi_formulario{
-    max-width: 80vh;
+    max-width: 95vh;
     width: 800px;
-    height: 90vh;
+    min-height: 80vh;
     inset: 0;
     margin: auto;
     background: whitesmoke;
@@ -187,6 +187,7 @@ main{
     position: relative;
     border-bottom:1px solid #adadad;
     margin:30px 0;
+    
 
 }
 
@@ -240,9 +241,10 @@ main{
 
 
 
-/* estilo Formulario nuevo mensaje de error y checkpoit*/
+/* estilo Formulario nuevo mensaje de errort*/
 .formulario__input-error {
 	font-size: 12px;
+    color: #F66060;
 	margin-bottom: 0;
 	display: none;
 }
@@ -266,19 +268,19 @@ main{
 /* ----- -----  Estilos para Validacion ----- ----- */
 
 
-.formulario__grupo-correcto .formulario__validacion-estado {
-	color: #1ed12d;
-	opacity: 1;
+.formulario__grupo-correcto {
+    border-radius: 10px;
+	background:rgba(172, 255, 47, 0.144)
+	/*opacity: 0.3;*/
 }
 
-.formulario__grupo-incorrecto .formulario__label {
-	color: #bb2929;
+.formulario__grupo-incorrecto {
+    border-radius: 10px;
+	background: rgba(255, 1, 1, 0.164);
+	/*opacity: 0.3;*/
 }
 
-.formulario__grupo-incorrecto .formulario__validacion-estado {
-	color: #bb2929;
-	opacity: 1;
-}
+
 
 
 
@@ -301,41 +303,44 @@ main{
 
 
 
-#formulario__mensaje{
+.caja_formulario_mensaje_error_login{
     width: auto;
     height: 45px;
     text-align: center;
 	line-height: 45px;
     font-size: 16px;
 	background: #F66060;
+    margin-bottom: 15px;
+    padding: 0 5px 0;
 	border-radius: 10px;
 	display: none;
 }
 
-.formulario__mensaje-activo {
+.formulario-mensaje-error {
 	display: block;
+    
 }
 
-.formulario__mensaje p {
-	margin: 0;
-}
 
-.formulario__mensaje-exito {
+
+.caja_formulario_mensaje_exito_login {
     width: auto;
 	height: 45px;
     text-align: center;
 	line-height: 45px;
 	font-size: 16px;
-	color: black;
-    background: #119200;
-	padding: 0 15px;
+	color: rgb(53, 24, 61);
+    background: #1eff0028;
+    margin-bottom: 15px;
+	padding: 0 15px 0;
 	border-radius: 10px;
 	display: none;
    
 }
 
-.formulario__mensaje-exito-activo {
+.formulario-mensaje-exito {
 	display: block;
+
 }
 /* --- ----*/
 
@@ -347,12 +352,20 @@ main{
 input[type="submit"]{
     width: 80%;
     height:45px;
-    border: 1px solid;
+    border: 0;
+    text-shadow: 1px 1px 1px #000;
     background: #6c3483;
+    background-image: linear-gradient(
+        to top left,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 30%,
+        rgba(0, 0, 0, 0));
     border-radius: 10px;
     line-height: 45px;
     font-size: 18px;
     color: white;
+    box-shadow: var(--sombra) inset 2px 2px 3px ;
+    box-shadow:  rgba(0, 0, 0, 0.6) inset -2px -2px 3px;
     cursor: pointer;
     outline: none;
     
@@ -360,9 +373,16 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     color:aqua;
-    box-shadow: var(--sombra) 2px 2px 3px 2px;
-    transition: .5s;
+    background: #9a68ad;
+   
+    
+}
 
+input[type="submit"]:active{  
+    box-shadow: var(--sombra) -2px -2px 3px;
+    box-shadow:  rgba(0, 0, 0, 0.6) inset 2px 2px 3px;
+    /*transition: .5s;*/
+    
 }
 
 
