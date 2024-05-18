@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/calltoaction.css"> <!-- Enlaza el archivo de estilos CallToAction -->
     <link rel="stylesheet" href="./css/formulario.css"> <!-- Enlaza el archivo de estilos Formulario -->
     <link rel="stylesheet" href="./css/carrousel.css"> <!-- Enlaza el archivo de estilos Carrousel -->
+    <link rel="stylesheet" href="./css/products.css"> <!-- Enlaza el archivo de estilos products -->
+    <link rel="stylesheet" href="./css/newsletter.css"> <!-- Enlazar el archivo CSS específico para newsletter -->
     <script src="https://kit.fontawesome.com/1b956063ae.js" crossorigin="anonymous"></script> <!-- Iconos redes sociales-->
 
     <!--BOOTSTRAP-->
@@ -25,6 +27,8 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./js/validarNewsletter.js"></script>
 </head>
 
 <body>
@@ -34,9 +38,9 @@
         <nav>
           <ul>
             <li><a href="./index.html">Inicio</a></li> <!-- Enlace página de inicio -->
-            <li><a href="./products.html">Productos</a></li> <!-- Enlace página de productos -->
+            <li><a href="./sitio/products.html">Productos</a></li> <!-- Enlace página de productos -->
             <li><a href="#">Carrito</a></li> <!-- Enlace carrito de compras -->
-            <li><a href="./contact.htm">Contacto</a></li> <!-- Enlace página de contacto -->
+            <li><a href="./sitio/contact.html">Contacto</a></li> <!-- Enlace página de contacto -->
           </ul>
         </nav>
     </header>
@@ -55,27 +59,33 @@
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="./img/carrousel/1.png" alt="First slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Regalá experiencias</h2>
-                            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-                                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                            <h2>Regalá Experiencias</h2>
+                            <p>
+                                Elige las especies perfectas para cada espacio.<br>
+                                Descubre nuestra selección de plantas y flores. <br>
+                                Sorprende a tus seres queridos con un detalle único y natural. <br>                                
                             </p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="./img/carrousel/2.png" alt="Second slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Regalá experiencias</h2>
-                            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-                                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                            <h2>Regala Vida y Alegría</h2>
+                            <p>
+                                Experimenta la emoción de regalar una nueva experiencia. <br>
+                                Más que un regalo, una conexión con la naturaleza. <br>
+                                Flores frescas, plantas exóticas y accesorios para tu jardín. <br>
                             </p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="./img/carrousel/3.png" alt="Third slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Regalá experiencias</h2>
-                            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
-                                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                            <h2>Regalá una Planta</h2>
+                            <p>
+                                Una opción para cada espacio. <br>
+                                Envío a domicilio y asesoría personalizada. <br>
+                                ¡Regala vida y sonrisas con nuestras plantas y flores!
                             </p>
                         </div>
                     </div>
@@ -92,43 +102,42 @@
         </article>
 
         <!-- Call to action -->
-        <article class="calltoaction">
-            <!-- Acá deberíamos poner un botón que te redirija al catálogo -->
+         <!-- Acá deberíamos poner un botón que te redirija al catálogo -->
+        <!-- <article class="calltoaction">
             <br>
             <h1>¡Regalá experiencias!</h1>
             <p>Lorem lorem lorem lorem lorem lorem lorem</p>
             <button class="btn">Ver catálogo</button>
             <br>
-        </article>
+        </article> -->
 
         <!-- Cards -->
         <article class="page-content">
             <div class="card">
                 <div class="content">
-                    <h2 class="title">Arreglos florales</h2>
-                    <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
-                        it, the mountains</p>
+                    <h2 class="title">Arreglos Florales</h2>
+                    <p class="copy"> ¡Expresa tu creatividad con arreglos florales!</p>
                     <button class="btn">Ver más</button>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
-                    <h2 class="title">Plantas exóticas</h2>
-                    <p class="copy">Plan your next beach trip with these fabulous destinations</p>
+                    <h2 class="title">Plantas Exóticas</h2>
+                    <p class="copy">¡Adéntrate en el mundo de las plantas exóticas!</p>
                     <button class="btn">Ver más</button>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
-                    <h2 class="title">Low effort</h2>
-                    <p class="copy">It's the desert you've always dreamed of</p>
+                    <h2 class="title">Sorprende</h2>
+                    <p class="copy">¡Sorprende con un detalle natural y personalizado!</p>
                     <button class="btn">Ver más</button>
                 </div>
             </div>
             <div class="card">
                 <div class="content">
-                    <h2 class="title">Decorá tus ambientes</h2>
-                    <p class="copy">Seriously, straight up, just blast off into outer space today</p>
+                    <h2 class="title">Decora Ambientes</h2>
+                    <p class="copy">¡Decora y vive en un ambiente natural!</p>
                     <button class="btn">Ver más</button>
                 </div>
             </div>
@@ -137,14 +146,22 @@
         <!-- Espacio para el newsletter -->
         <article class="newsletter">
             <br>
-            Acá pondría mi newsletter... si tuviera uno.
+            <h2 class="title">Suscríbete a nuestro newsletter</h2>
+            <p class="description">Recibe descuentos y promociones exclusivas en tu correo electrónico</p>
+            <form class="form-inline">
+                <div class="form-group mx-sm-3">
+                    <input type="email" class="form-control" id="email" placeholder="Ingresá tu email">
+                </div>
+                <button type="submit" class="btn btn-primary">Suscribirme</button>
+            </form>
+            <p id="errorMensaje"></p>
             <br>
         </article>
 
     </main>
 
     <footer>
-        <p>&copy; 2024 E-commerce Plants & Gifts</p>  <!-- Derechos de autor -->
+        <p>&copy;  2024 E-commerce Plants & Gifts</p>  <!-- Derechos de autor -->
         <img src="./img/logo/jacaranda_white.png" alt="Logo Jacarandá" class="logoFooter"> <!-- Logo de la tienda -->
         <br>
         <a class="redsoc" href="https://www.instagram.com/" target="_blank">
@@ -155,8 +172,7 @@
         </a>
         <a class="redsoc" href="https://www.linkedin.com/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
-        </a>
-    
+        </a> 
         <a href="https://wa.me/1131771533" target="_blank">
             <img class="whatsapp" alt="WhatsApp" src="./img/whatsapp/WhatsApp_icon.png" >
         </a>
