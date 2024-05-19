@@ -39,23 +39,25 @@ plants-and-gifts/
 │   ├── formulario.css
 │   ├── logo.css
 │   ├── newsletter.css
-│   ├── products.css
+│   └── products.css
 │
 ├── img/
 │   ├── carrousel/
 │   ├── logo/
-│   ├── whatsapp/
-│   └── ...
+│   └── whatsapp/
 │
-├── js/
-│   ├── validarNewsletter.js
+└── js/
+    └── validarNewsletter.js
+
+sitio/
 │
-├── sitio/
-│   ├── contact.html
-│   ├── products.html
-│
-├── index.html
-└── README.md
+├── contact.html
+├── products.html
+└── index.html
+
+README.md
+
+
 
 
 ## Detalles del Código
