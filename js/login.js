@@ -69,8 +69,13 @@ function mostrarMensaje(campos){
         document.getElementById('mensaje-exito')
         .classList.add('formulario-mensaje-exito');
 		setTimeout(() => {
+            document.getElementById('grupo__usuario_login')
+            .classList.remove('formulario__grupo-correcto');
+            document.getElementById('grupo__password_login')
+            .classList.remove('formulario__grupo-correcto');
 			document.getElementById('mensaje-exito')
             .classList.remove('formulario-mensaje-exito');
+            formulario_login.reset(); 
 		}, 5000);
 
     } else {
