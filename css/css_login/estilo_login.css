@@ -1,80 +1,3 @@
-/* Variables de color */
-:root {
-    --primary-bg: #fff; /* Primary background */
-    --secondary-bg: #b18eb6; /* Secondary background */
-    --primary-font: #000000; /* Primary font */
-    --secondary-font: #fffff; /* Secondary font */
-    --fondo-opcional: #f4edfa; /* fondo opcional al principal*/
-    --sombra-opcional: rgb(82, 33, 102); /* sombra opcional --sombra */
-    --sombra: #b18eb6; /*sombra suave */
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-body{
-    max-width: 1024px;
-    max-height: 768px;
-    background: var(--primary-bg);
-    font-family: roboto, sans-serif;
-   
-}
-/* Estilo Header */
-header{
-    background: var(--primary-bg);
-    display: block;
-    box-sizing: border-box;
-    
-}
-
-.block_logo{
-    text-align:center;
-}
-
-.block_logo .logo{
-    width: auto;
-    height: 200px;
-}
-
-.barra_nav ul{
-    margin: auto;
-    padding:25px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    list-style-type: none;
-
-    
-    
-}
-
-.barra_nav ul li{
-    
-    border: 1px #f4edfa solid transparent;
-    border-radius: 3px;
-    height: 45px;
-    line-height: 45px;
-    transition: .3s ease all;
-
-
-}
-
-.barra_nav ul li a{
-    text-decoration: none;
-    color:rgb(38, 65, 71);
-
-}
-
-.barra_nav ul li:hover{
-    border: 1px #f4edfa solid;
-    box-shadow: var(--sombra) 2px 3px 4px 3px;
-
-}
-
-/* Fin Estilos Header*/
 
 
 
@@ -271,13 +194,13 @@ main{
 .formulario__grupo-correcto {
     border-radius: 10px;
 	background:rgba(172, 255, 47, 0.144)
-	/*opacity: 0.3;*/
+	
 }
 
 .formulario__grupo-incorrecto {
     border-radius: 10px;
 	background: rgba(255, 1, 1, 0.164);
-	/*opacity: 0.3;*/
+	
 }
 
 
@@ -374,6 +297,7 @@ input[type="submit"]{
 input[type="submit"]:hover{
     color:aqua;
     background: #9a68ad;
+    transition: all 0.3s ease-in-out;
    
     
 }
@@ -381,24 +305,7 @@ input[type="submit"]:hover{
 input[type="submit"]:active{  
     box-shadow: var(--sombra) -2px -2px 3px;
     box-shadow:  rgba(0, 0, 0, 0.6) inset 2px 2px 3px;
-    /*transition: .5s;*/
+    transition: all 0.3s ease-in-out;
     
 }
 
-
-
-footer {
-    margin:auto;
-    background-color: var(--secondary-bg); /* Color de fondo del pie de página */
-    color: var(--primary-font); /* Color del texto del pie de página */
-    padding: 20px; /* Espaciado interno del pie de página */
-    text-align: center; /* Alineación del texto centrada */
-    box-sizing:border-box;
-}
-
-
-/* ----- -----  Mediaqueries ----- ----- 
-@media screen and (max-width: 800px) {
-	
-
-}  */

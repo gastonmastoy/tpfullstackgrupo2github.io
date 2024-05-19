@@ -45,41 +45,54 @@ header{
 }
 
 .barra_nav ul{
-    margin: auto;
-    padding:25px;
     display: flex;
     justify-content: center;
+    margin: auto;
+    padding:25px;
     gap: 25px;
     list-style-type: none;
-
+    
     
     
 }
 
 .barra_nav ul li{
-    
     border: 1px #f4edfa solid transparent;
     border-radius: 3px;
     height: 45px;
     line-height: 45px;
-    transition: .3s ease all;
-
-
+    
+    
 }
 
 .barra_nav ul li a{
+    padding: 5px;
     text-decoration: none;
-    color:rgb(38, 65, 71);
+    color:rgb(2, 73, 88);
 
 }
 
 .barra_nav ul li:hover{
     border: 1px #f4edfa solid;
-    box-shadow: var(--sombra) 2px 3px 4px 3px;
+    box-shadow: var(--sombra) 3px 3px 4px ;
+    cursor: pointer;
+    outline: none;
+}
+
+.barra_nav ul li:active {
+   
+    box-shadow:  rgba(0, 0, 0, 0.6) inset 2px 2px 4px;
 
 }
 
+.activa {
+    border: 1px #f4edfa solid;
+    box-shadow: var(--sombra) 3px 3px 4px ;
+    
+}
 /* Fin Estilos Header*/
+
+/* Inicio Estilos Footer*/
 
 footer {
     background-color: var(--secondary-bg); /* Color de fondo del pie de página */
@@ -131,3 +144,5 @@ footer {
     transition: all 0.3s ease-in-out;
     /* width: 5%; */
 }
+
+/* Fin Estilios Footer*/
