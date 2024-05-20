@@ -127,13 +127,13 @@ html, body {
   font-size: 0.65rem;
   font-weight: bold;
   letter-spacing: 0.025rem;
-  text-transform: uppercase;
-  color: white;
-  background-color: black;
+  /* text-transform: uppercase; */
+  color: whitesmoke;
+  background-color: whitesmoke;
   border: none;
 }
 .btn:hover {
-  background-color: #0d0d0d;
+  background-color: whitesmoke;
 }
 .btn:focus {
   outline: 1px dashed yellow;
