@@ -12,6 +12,7 @@ formulario.addEventListener('submit', (event) => {
         // alert('Nombre válido');
         if (validateEmail(email)) {
                 alert('Nombre y Correo electrónico Okay');
+                alert('Tu Pregunta sera respondida a la brevedad');
             } else {
                 alert('Email no válido');
             }
