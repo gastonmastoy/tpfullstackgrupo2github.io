@@ -8,10 +8,10 @@ function validarEmail() {
         mensajeError.textContent = 'Por favor, ingrese un correo electrónico válido.';
         mensajeError.style.color = 'red';
         return false;
+    } else{
+        alert('¡Gracias por subscribirse a nuestro Newsletter!');
+        return true;
     }
-
-    mensajeError.textContent = '';
-    return true;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
