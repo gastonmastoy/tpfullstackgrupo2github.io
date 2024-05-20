@@ -64,6 +64,8 @@ main {
 }
 
 .card__description {
+  padding-left: 20px;
+  padding-right: 20px;
   line-height: 1.5;
   color: var(--text-color);
 }
@@ -106,6 +108,18 @@ main {
 .card__button__addtocart:hover {
   background-color: var(--hover-color);
   color: #ffffff;
+}
+
+.card__price {
+  color: var(--secondary-color);
+}
+
+/* ------ numero del carrito  ------ */
+.numero-carrito {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.25rem;
 }
 
 /* ------ Breackpoints  ------ */
