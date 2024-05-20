@@ -9,7 +9,7 @@ function validarEmail() {
         mensajeError.style.color = 'red';
         return false;
     } else{
-        alert('¡Gracias por subscribirse a nuestro Newsletter!');
+        alert(`¡Gracias por subscribir ${email} a nuestro Newsletter!`);
         return true;
     }
 }

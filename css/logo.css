@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .logo {
-    max-width: 80%; /* 50% of the viewport width */
+    max-width: 40%; /* 50% of the viewport width */
 }
 
 .carousel-item img {
