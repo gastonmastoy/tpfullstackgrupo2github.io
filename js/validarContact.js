@@ -2,6 +2,7 @@
 const emailInput = document.getElementById('email');
 const nameInput = document.getElementById('name');
 // const phoneInput = document.getElementById('phone');
+var mensajeError = document.getElementById('errorMensaje');
 
 formulario.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -11,13 +12,16 @@ formulario.addEventListener('submit', (event) => {
     if (validateName(name)) {
         // alert('Nombre válido');
         if (validateEmail(email)) {
-                alert('Nombre y Correo electrónico Okay');
-                alert('Tu Pregunta sera respondida a la brevedad');
+                // alert('Nombre y Correo electrónico Okay');
+                mensajeError.textContent = 'Tu pregunta sera respondida a la brevedad';
+                mensajeError.style.color = 'green';
             } else {
-                alert('Email no válido');
+                mensajeError.textContent = 'Por favor, ingrese un Email válido';
+                mensajeError.style.color = 'red';
             }
     } else {
-        alert('Nombre no válido');
+        mensajeError.textContent = 'Por favor, ingrese Nombre válido';
+        mensajeError.style.color = 'red';
     }
 });
 
