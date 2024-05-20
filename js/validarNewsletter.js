@@ -10,6 +10,8 @@ function validarEmail() {
         return false;
     } else{
         alert(`¡Gracias por subscribir ${email} a nuestro Newsletter!`);
+        mensajeError.textContent = `Gracias por subscribir ${email} a nuestro Newsletter!`;
+        mensajeError.style.color = 'green';
         return true;
     }
 }
