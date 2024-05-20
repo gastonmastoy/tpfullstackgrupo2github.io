@@ -27,7 +27,7 @@ Plants & Gifts es una tienda en línea dedicada a la venta de plantas, flores y 
 
 ## Estructura de Carpetas
 La estructura de carpetas del proyecto es la siguiente:
-
+```
 plants-and-gifts/
 │
 ├── css/
@@ -56,7 +56,7 @@ sitio/
 └── index.html
 
 README.md
-
+```
 
 
 
