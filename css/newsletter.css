@@ -1,3 +1,21 @@
+:root {
+    --primary-color: #b18eb6;
+    --hover-color: #9e8ddb;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--hover-color);
+  }
+
 .newsletter {
     background-color: #f2f2f2;
     padding: 2rem;
@@ -17,6 +35,3 @@
     width: 30rem;
 }
 
-.newsletter .form-inline .btn {
-    margin-left: 1rem;
-}
