@@ -1,6 +1,11 @@
 :root {
-    --primary-color: #b18eb6;
-    --hover-color: #9e8ddb;
+  --primary-color: #b18eb6;
+  --secondary-color: #9e8ddb;
+  --background-color: #c7b8ff;
+  --hover-color: #9e8ddb;
+  --text-color: #6a6a6a;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --hover-shadow-color: rgba(0, 0, 0, 0.4);
   }
   
   .btn-primary {
@@ -34,4 +39,24 @@
 .newsletter .form-inline .form-control {
     width: 30rem;
 }
+/* Media Queries for responsiveness */
+@media (min-width: 576px) {
+  .newsletter .form-inline {
+    flex-direction: row;
+    justify-content: center;
+  }
 
+  .newsletter .form-group {
+    margin-right: 10px;
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  .newsletter .form-group input {
+    width: auto;
+  }
+
+  .newsletter .btn-primary {
+    width: auto;
+  }
+}
