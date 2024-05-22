@@ -1,87 +1,122 @@
 /* Variables de color */
 :root {
-    --primary-bg: #fff; /* Primary background */
-    --secondary-bg: #b18eb6; /* Secondary background */
-    --primary-font: #000000; /* Primary font */
-    --secondary-font: #fffff; /* Secondary font */
+  --primary-bg: #fff; /* Primary background */
+  --secondary-bg: #b18eb6; /* Secondary background */
+  --primary-font: #000000; /* Primary font */
+  --secondary-font: #fffff; /* Secondary font */
+  --primary-color: #b18eb6;
+  --secondary-color: #9e8ddb;
 }
 
 /* Estilos generales */
 body {
-    font-family: Roboto, sans-serif; /* Fuente para el cuerpo del documento */
-    margin: 0; /* Elimina los márgenes predeterminados */
-    padding: 0; /* Elimina el relleno predeterminado */
-
+  font-family: Roboto, sans-serif; /* Fuente para el cuerpo del documento */
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 0; /* Elimina el relleno predeterminado */
 }
 
-header {
-    background-color: var(--primary-bg); /* Color de fondo del encabezado */
-    color: var(--primary-font); /* Color del texto del encabezado */
-    text-align: center; /* Alineación del texto centrada */
+.header {
+  background-color: var(--primary-bg); /* Color de fondo del encabezado */
+  color: var(--primary-font); /* Color del texto del encabezado */
+  text-align: center; /* Alineación del texto centrada */
 }
 
-nav ul {
-    list-style-type: none; /* Elimina los estilos de lista predeterminados */
-    padding: 0; /* Elimina el relleno predeterminado */
+.header_ul {
+  list-style-type: none; /* Elimina los estilos de lista predeterminados */
+  padding: 0; /* Elimina el relleno predeterminado */
 }
 
-nav ul li {
-    display: inline; /* Muestra los elementos de lista en línea */
-    margin-right: 20px; /* Espacio entre elementos de lista */
+.header_li {
+  display: inline; /* Muestra los elementos de lista en línea */
+  margin-right: 20px; /* Espacio entre elementos de lista */
 }
 
-nav ul li a {
-    color: var(--primary-font); /* Color del enlace del menú */
-    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+.header__a {
+  color: var(--primary-font); /* Color del enlace del menú */
+  text-decoration: none !important; /* Elimina el subrayado predeterminado de los enlaces */
 }
 
-nav ul li a:hover {
-    color: var(--primary-font ); /* Change color on hover */
+.header__a a:hover {
+  color: var(--primary-font); /* Change color on hover */
+}
+
+.login {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+
+.login:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* ------ numero del carrito  ------ */
+.numero-carrito {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.25rem;
 }
 
 main {
-    padding: 20px; /* Espaciado interno del contenido principal */
+  padding: 20px; /* Espaciado interno del contenido principal */
 }
 
 footer {
-    background-color: var(--secondary-bg); /* Color de fondo del pie de página */
-    color: var(--primary-font); /* Color del texto del pie de página */
-    padding: 20px; /* Espaciado interno del pie de página */
-    text-align: center; /* Alineación del texto centrada */
+  background-color: var(--secondary-bg); /* Color de fondo del pie de página */
+  color: var(--primary-font); /* Color del texto del pie de página */
+  padding: 20px; /* Espaciado interno del pie de página */
+  text-align: center; /* Alineación del texto centrada */
 }
 
 /* Redes sociales */
 .redsoc {
-    color: black;
-    font-size: 2vw;
-    margin: 0.5%;
-    transition: all 0.3s ease-in;
+  color: black;
+  font-size: 2vw;
+  margin: 0.5%;
+  transition: all 0.3s ease-in;
 }
 /* Cambia color icono Redes sociales */
-.redsoc:hover{
-    animation-name: cambiarColor;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
+.redsoc:hover {
+  animation-name: cambiarColor;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
 /* Prueba Cambia colores icono Redes sociales */
 @keyframes cambiarColor {
-    0% {color: red;}
-    50% {color: green;}
-    75% {color: blue;}
-    100% {color: black;}
-   }
+  0% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: blue;
+  }
+  100% {
+    color: black;
+  }
+}
 /* Whatsapp */
-   .whatsapp{
-    position:fixed;
-    width: 4%;
-    bottom: 2.5%; right: 3%;
-    z-index: 20;
-    transition: all 0.3s ease-in-out;
+.whatsapp {
+  position: fixed;
+  width: 4%;
+  bottom: 2.5%;
+  right: 3%;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
 }
 /* Whatsapp cambia tamaño cuando se pasa por arriba */
-.whatsapp:hover{
-    transform: scale(1.5, 1.5);
-    transition: all 0.3s ease-in-out;
-    /* width: 5%; */
+.whatsapp:hover {
+  transform: scale(1.5, 1.5);
+  transition: all 0.3s ease-in-out;
+  /* width: 5%; */
 }

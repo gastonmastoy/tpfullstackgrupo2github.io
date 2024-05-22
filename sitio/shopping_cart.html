@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Productos</title>
+    <title>Carrito</title>
+    <!-- Icono de la web -->
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/estilos.css" />
     <!-- Enlaza el archivo de estilos CSS -->
     <link rel="stylesheet" href="../css/corte.css" />
@@ -18,27 +20,37 @@
     <!-- Iconos redes sociales-->
   </head>
   <body>
-    <header>
+    <header class="header">
       <!-- Logo de la tienda -->
       <img
         src="../img/logo/jacaranda_logo.png"
         alt="Logo Jacarandá"
         class="logo"
       />
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
+      <nav class="header__nav">
+        <ul class="header_ul">
+          <li class="header_li">
+            <a class="header__a" href="../index.html">Inicio</a>
+          </li>
           <!-- Enlace página de inicio -->
-          <li><a href="../sitio/products.html">Productos</a></li>
+          <li class="header_li">
+            <a class="header__a" href="./products.html">Productos</a>
+          </li>
           <!-- Enlace página de productos -->
-          <li>
-            <a href="/sitio/shopping_cart.html">
+          <li class="header_li">
+            <a class="header__a" href="./shopping_cart.html">
               Carrito <span id="numero-carrito" class="numero-carrito">0</span>
             </a>
           </li>
           <!-- Enlace carrito de compras -->
-          <li><a href="../sitio/contact.html">Contacto</a></li>
+          <li class="header_li">
+            <a class="header__a" href="./contact.html">Contacto</a>
+          </li>
           <!-- Enlace página de contacto -->
+          <li class="header_li">
+            <a class="header__a login" href="./contact.html">Inicia sesión</a>
+          </li>
+          <!-- Enlace para iniciar sesion -->
         </ul>
       </nav>
     </header>

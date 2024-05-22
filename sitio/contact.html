@@ -1,80 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <link rel="stylesheet" href="../css/estilos.css"> <!-- Enlaza el archivo de estilos CSS -->
-    <link rel="stylesheet" href="../css/corte.css"> <!-- Enlaza el archivo de estilos corte -->
-    <link rel="stylesheet" href="../css/logo.css"> <!-- Enlaza el archivo de estilos LOGO -->
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+    <!-- Icono de la web -->
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <!-- Enlaza el archivo de estilos CSS -->
+    <link rel="stylesheet" href="../css/corte.css" />
+    <!-- Enlaza el archivo de estilos corte -->
+    <link rel="stylesheet" href="../css/logo.css" />
+    <!-- Enlaza el archivo de estilos LOGO -->
     <!-- <link rel="stylesheet" href="./css/products.css"> -->
-    <link rel="stylesheet" href="../css/formulario.css"> <!-- Enlaza el archivo de estilos Formulario -->
-    <script src="https://kit.fontawesome.com/1b956063ae.js" crossorigin="anonymous"></script> <!-- Iconos redes sociales-->
-</head>
-<body>
-    <header>
-        <!-- Logo de la tienda -->
-        <img src="../img/logo/jacaranda_logo.png" alt="Logo Jacarandá" class="logo">
-        <nav>
-          <ul>
-            <li><a href="../index.html">Inicio</a></li> <!-- Enlace página de inicio -->
-            <li><a href="../sitio/products.html">Productos</a></li> <!-- Enlace página de productos -->
-            <li><a href="#">Carrito</a></li> <!-- Enlace carrito de compras -->
-            <li><a href="../sitio/contact.html">Contacto</a></li> <!-- Enlace página de contacto -->
-          </ul>
-        </nav>
+    <link rel="stylesheet" href="../css/formulario.css" />
+    <!-- Enlaza el archivo de estilos Formulario -->
+    <script
+      src="https://kit.fontawesome.com/1b956063ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Iconos redes sociales-->
+  </head>
+  <body>
+    <header class="header">
+      <!-- Logo de la tienda -->
+      <img
+        src="../img/logo/jacaranda_logo.png"
+        alt="Logo Jacarandá"
+        class="logo"
+      />
+      <nav class="header__nav">
+        <ul class="header_ul">
+          <li class="header_li">
+            <a class="header__a" href="../index.html">Inicio</a>
+          </li>
+          <!-- Enlace página de inicio -->
+          <li class="header_li">
+            <a class="header__a" href="./products.html">Productos</a>
+          </li>
+          <!-- Enlace página de productos -->
+          <li class="header_li">
+            <a class="header__a" href="./shopping_cart.html">
+              Carrito <span id="numero-carrito" class="numero-carrito">0</span>
+            </a>
+          </li>
+          <!-- Enlace carrito de compras -->
+          <li class="header_li">
+            <a class="header__a" href="./contact.html">Contacto</a>
+          </li>
+          <!-- Enlace página de contacto -->
+          <li class="header_li">
+            <a class="header__a login" href="./contact.html">Inicia sesión</a>
+          </li>
+          <!-- Enlace para iniciar sesion -->
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <div class="container">
-            <div class="item1">
-                <h1>Contacto</h1>
-                <p>Para preguntas referentes a un pedido, más información sobre nuestros productos o porque necesitás contactar con nosotras ¡escribinos! </p>
-                    <form id="formulario">
-                        <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Nombre:" required><br>
+      <div class="container">
+        <div class="item1">
+          <h1>Contacto</h1>
+          <p>
+            Para preguntas referentes a un pedido, más información sobre
+            nuestros productos o porque necesitás contactar con nosotras
+            ¡escribinos!
+          </p>
+          <form id="formulario">
+            <label for="name"></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nombre:"
+              required
+            /><br />
 
-                        <label for="email"></label>
-                        <input type="email" id="email" name="email" placeholder="Email:" required><br>
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email:"
+              required
+            /><br />
 
-                        <label for="phone"></label>
-                        <input type="tel" id="phone" name="phone" placeholder="Telefono:" required><br>
+            <label for="phone"></label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Telefono:"
+              required
+            /><br />
 
-                        <label for="message"></label>
-                        <textarea type="text"  name="message" placeholder="Ingrese su mensaje"></textarea>
-                        <br>
-                        <button type="submit">Enviar</button>
-                     </form>
-                     <p id="errorMensaje"></p>
-            </div>
-            <div class="item2">
-                <h1>Sucursales</h1>
-                <p>Almagro: <a href="https://maps.app.goo.gl/mfT64DXEXKvNtEaY7" target="_blank">Francisco Acuña de Figueroa 582 - Caba</a></p>
-                <p>Olivos: <a href="https://maps.app.goo.gl/DyYvaf7W3aViL5yV7" target="_blank">Carlos Villate 2608 - Bs As</a></p>
-                <br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0124190916968!2d-58.42497094478793!3d-34.60384746793998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca63f9525f93%3A0x158cdcd371c92804!2sFaitful%20Viveros!5e0!3m2!1ses-419!2sar!4v1715963985456!5m2!1ses-419!2sar" width="200" height="170" style="border:1;margin-right: 5%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.249341860105!2d-58.50264802515138!3d-34.521910253180884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb12f802f2877%3A0xc09ca2c385bd5b59!2sVivero%20Verde%20Olivos!5e0!3m2!1ses-419!2sar!4v1715963776077!5m2!1ses-419!2sar" width="200" height="170" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <label for="message"></label>
+            <textarea
+              type="text"
+              name="message"
+              placeholder="Ingrese su mensaje"
+            ></textarea>
+            <br />
+            <button type="submit">Enviar</button>
+          </form>
+          <p id="errorMensaje"></p>
         </div>
-        <script src="../js/validarContact.js"></script>
+        <div class="item2">
+          <h1>Sucursales</h1>
+          <p>
+            Almagro:
+            <a href="https://maps.app.goo.gl/mfT64DXEXKvNtEaY7" target="_blank"
+              >Francisco Acuña de Figueroa 582 - Caba</a
+            >
+          </p>
+          <p>
+            Olivos:
+            <a href="https://maps.app.goo.gl/DyYvaf7W3aViL5yV7" target="_blank"
+              >Carlos Villate 2608 - Bs As</a
+            >
+          </p>
+          <br />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0124190916968!2d-58.42497094478793!3d-34.60384746793998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca63f9525f93%3A0x158cdcd371c92804!2sFaitful%20Viveros!5e0!3m2!1ses-419!2sar!4v1715963985456!5m2!1ses-419!2sar"
+            width="200"
+            height="170"
+            style="border: 1; margin-right: 5%"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.249341860105!2d-58.50264802515138!3d-34.521910253180884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb12f802f2877%3A0xc09ca2c385bd5b59!2sVivero%20Verde%20Olivos!5e0!3m2!1ses-419!2sar!4v1715963776077!5m2!1ses-419!2sar"
+            width="200"
+            height="170"
+            style="border: 1"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <script src="../js/validarContact.js"></script>
     </main>
 
     <footer>
-        <p>&copy; 2024 E-commerce Plants & Gifts</p>  <!-- Derechos de autor -->
-        <img src="../img/logo/jacaranda_white.png" alt="Logo Jacarandá" class="logoFooter"> <!-- Logo de la tienda -->
-        <br>
-        <a class="redsoc" href="https://www.instagram.com/" target="_blank">
-            <i class="fa-brands fa-square-instagram"></i>
-        </a>
-        <a class="redsoc" href="https://www.facebook.com/" target="_blank">
-            <i class="fa-brands fa-square-facebook"></i>
-        </a>
-        <a class="redsoc" href="https://www.linkedin.com/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://wa.me/1131771533" target="_blank">
-            <img class="whatsapp" alt="WhatsApp" src="../img/whatsapp/WhatsApp_icon.png" >
-        </a>
+      <p>&copy; 2024 E-commerce Plants & Gifts</p>
+      <!-- Derechos de autor -->
+      <img
+        src="../img/logo/jacaranda_white.png"
+        alt="Logo Jacarandá"
+        class="logoFooter"
+      />
+      <!-- Logo de la tienda -->
+      <br />
+      <a class="redsoc" href="https://www.instagram.com/" target="_blank">
+        <i class="fa-brands fa-square-instagram"></i>
+      </a>
+      <a class="redsoc" href="https://www.facebook.com/" target="_blank">
+        <i class="fa-brands fa-square-facebook"></i>
+      </a>
+      <a class="redsoc" href="https://www.linkedin.com/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://wa.me/1131771533" target="_blank">
+        <img
+          class="whatsapp"
+          alt="WhatsApp"
+          src="../img/whatsapp/WhatsApp_icon.png"
+        />
+      </a>
     </footer>
-</body>
+    <script src="../js/numero_carrito.js"></script>
+  </body>
 </html>
