@@ -42,9 +42,9 @@
 <body>
     <header>
         <!-- Logo de la tienda -->
-        <div class="block_logo">
+        <div class="block_logo"id="page-sidebar" >
             
-            <img src="../img/logo/jacaranda_logo.png" alt="Logo Jacarandá" class="logo"> <!-- Logo de la tienda -->
+            <img src="./img/logo/jacaranda_logo.png" alt="Logo Jacarandá" class="logo"> <!-- Logo de la tienda -->
 
         </div>
 
@@ -53,6 +53,7 @@
             <nav class="barra_nav">
                 <ul>
                     <li class="activa"><a href="./index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                    <li><a href="./sitio/catalog.html">Catalogo</a></li>
                     <li><a href="./sitio/products.html">Productos</a></li> <!-- Enlace a la página de productos -->
                     <li><a href="./sitio/contact.html">Contacto</a></li> <!-- Enlace al carrito de compras -->
                     <li><a href="#">Carrito</a></li> <!-- Enlace a la página de contacto -->
@@ -67,58 +68,62 @@
     <main>
 
         <!-- Carrousel -->
-        <article class="carrusel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="./img/carrousel/1.png" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Regalá Experiencias</h2>
-                            <p>
-                                Elige las especies perfectas para cada espacio.<br>
-                                Descubre nuestra selección de plantas y flores. <br>
-                                Sorprende a tus seres queridos con un detalle único y natural. <br>                                
-                            </p>
+        <section class="container">
+
+            <article class="carrusel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./img/carrousel/1.png" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Regalá Experiencias</h2>
+                                <p>
+                                    Elige las especies perfectas para cada espacio.<br>
+                                    Descubre nuestra selección de plantas y flores. <br>
+                                    Sorprende a tus seres queridos con un detalle único y natural. <br>                                
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/carrousel/2.png" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Regala Vida y Alegría</h2>
+                                <p>
+                                    Experimenta la emoción de regalar una nueva experiencia. <br>
+                                    Más que un regalo, una conexión con la naturaleza. <br>
+                                    Flores frescas, plantas exóticas y accesorios para tu jardín. <br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/carrousel/3.png" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Regalá una Planta</h2>
+                                <p>
+                                    Una opción para cada espacio. <br>
+                                    Envío a domicilio y asesoría personalizada. <br>
+                                    ¡Regala vida y sonrisas con nuestras plantas y flores!
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./img/carrousel/2.png" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Regala Vida y Alegría</h2>
-                            <p>
-                                Experimenta la emoción de regalar una nueva experiencia. <br>
-                                Más que un regalo, una conexión con la naturaleza. <br>
-                                Flores frescas, plantas exóticas y accesorios para tu jardín. <br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./img/carrousel/3.png" alt="Third slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Regalá una Planta</h2>
-                            <p>
-                                Una opción para cada espacio. <br>
-                                Envío a domicilio y asesoría personalizada. <br>
-                                ¡Regala vida y sonrisas con nuestras plantas y flores!
-                            </p>
-                        </div>
-                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </article>
+            </article>
+
+        </section>
         <!-- Carrousel sin BOOTSTRAP y de forma dinamica-->
         
 
@@ -180,6 +185,26 @@
         </article>
 
     </main>
+    <aside>
+        <!-- boton sidebar -->
+        <div id="btn">
+            <div id='top'></div>
+            <div id='middle'></div>
+            <div id='bottom'></div>
+        </div>
+        <div class= "block_sidebar">
+            <nav id="caja">
+                <ul id="items">
+                    <li class="item"><a href="./index.html">Inicio</a></li>
+                    <li class="item"><a href="./sitio/products.html">Productos</a></li>
+                    <li class="item"><a href="./sitio/contact.html">Contacto</a></li> 
+                    <li class="item"><a href="#">Carrito</a></li>
+                    <li class="item"><a href="./sitio/formolario_login.html">Registrarme</a></li> 
+                    <li class="item"><a href="./sitio/login.html">Inicio de Secion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
 
     <footer>
         <p>&copy;  2024 E-commerce Plants & Gifts</p>  <!-- Derechos de autor -->
@@ -198,5 +223,6 @@
             <img class="whatsapp" alt="WhatsApp" src="./img/whatsapp/WhatsApp_icon.png" >
         </a>
     </footer>
+    <script src="./js/sidebar.js"></script>
 </body>
 </html>

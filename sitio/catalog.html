@@ -17,7 +17,7 @@
   <body>
     <header>
       <!-- Logo de la tienda -->
-      <div class="block_logo">
+      <div class="block_logo" id="page-sidebar" >
           
           <img src="../img/logo/jacaranda_logo.png" alt="Logo Jacarandá" class="logo"> <!-- Logo de la tienda -->
 
@@ -28,6 +28,7 @@
           <nav class="barra_nav">
               <ul>
                   <li><a href="./index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                  <li class="activa"><a href="./catalog.html">Catalogo</a></li>
                   <li><a href="./sitio/products.html">Productos</a></li> <!-- Enlace a la página de productos -->
                   <li><a href="./sitio/contact.html">Contacto</a></li> <!-- Enlace al carrito de compras -->
                   <li><a href="#">Carrito</a></li> <!-- Enlace a la página de contacto -->
@@ -117,6 +118,28 @@
       </section>
     </main>
 
+    <aside>
+      <!-- boton sidebar -->
+      <div id="btn">
+          <div id='top'></div>
+          <div id='middle'></div>
+          <div id='bottom'></div>
+      </div>
+      <div class= "block_sidebar">
+          <nav id="caja">
+              <ul id="items">
+                <li class="item"><a href="../index.html">Inicio</a></li>
+                <li class="item"><a href="../sitio/catalog.html">Catalogo</a></li>
+                <li class="item"><a href="../sitio/products.html">Productos</a></li>
+                <li class="item" ><a href="../sitio/contact.html">Contacto</a></li> 
+                <li class="item"><a href="#">Carrito</a></li>
+                <li class="item"><a href="../sitio/formolario_login.html">Registrarme</a></li> 
+                <li class="item"><a href="../sitio/login.html">Inicio de Secion</a></li>
+              </ul>
+          </nav>
+      </div>
+  </aside>
+
     
     <footer>
         <p>&copy;  2024 E-commerce Plants & Gifts</p>  <!-- Derechos de autor -->
@@ -135,7 +158,7 @@
             <img class="whatsapp" alt="WhatsApp" src="../img/whatsapp/WhatsApp_icon.png" >
         </a>
     </footer>
-  
+    <script src="../js/sidebar.js"></script>
 
   </body>
 </html>

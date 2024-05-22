@@ -1,4 +1,8 @@
 :root {
+    --black: #343838;
+    --blue: #00DFFC;
+    --dullWhite: #f6f6f6;
+    --easing: cubic-bezier(.6, .05, .28, .91);
     --primary-bg: #fff; /* Primary background */
     --secondary-bg: #b18eb6; /* Secondary background */
     --primary-font: #000000; /* Primary font */
@@ -27,7 +31,6 @@ body{
 header{
     background: var(--primary-bg);
     display: block;
-    box-sizing: border-box;
     
 }
 
@@ -42,6 +45,10 @@ header{
 
 .logo {
     max-width: 80%; /* 50% of the viewport width */
+}
+
+.block_barra_nav{
+    display:block;
 }
 
 .barra_nav ul{
@@ -92,6 +99,100 @@ header{
 }
 /* Fin Estilos Header*/
 
+
+/*    sidebar   */
+
+
+#btn {
+    display: none;
+	position: fixed;
+	z-index: 150;
+	top: 25px;
+	left: 20px;
+	cursor: pointer;
+	transition: left 500ms var(--easing);
+	div {
+		width: 35px;
+		height: 2px;
+		margin-bottom: 8px;
+		background-color: var(--primary-font);
+		transition: transform 500ms var(--easing), opacity 500ms, background-color 250ms;
+	}
+}
+
+#btn.active {
+   
+	left: 140px;
+	div {
+		background-color: var(--black);
+	}
+	#top {
+		transform: translateY(10px) rotate(-135deg);
+	}
+	#middle {
+		opacity: 0;
+		transform: rotate(135deg);
+	}
+	#bottom {
+		transform: translateY(-10px) rotate(-45deg);
+	}
+}
+
+#caja {
+	position: fixed;
+	z-index: 100;
+	overflow: auto;
+	top: 10px;
+	left: -275px;
+	width: 180px;
+	opacity: 0;
+	padding: 20px 0px;
+	height: 80%;
+	background-color: var(--sombra);
+	color: var(--black);
+	transition: all 350ms var(--easing);
+}
+
+#caja.active {
+	left: 0px;
+	opacity: 1;
+}
+
+#items {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	.item {
+		position: relative;
+		cursor: pointer;
+		font-size: 2em;
+		padding: 15px 30px;
+		transition: all 250ms;
+		&:hover {
+			padding: 15px 45px;
+			background-color: transparentize(var(--black), .8);
+		}
+	}
+}
+
+.item a {
+  font-size: 16px;
+  padding: 5px;
+  text-decoration: none;
+  color: whitesmoke; 
+}
+
+
+
+#btn, #btn * {
+	will-change: transform;
+}
+
+#caja {
+	will-change: transform, opacity;
+}
+/*fin sidebar  */
+
 /* Inicio Estilos Footer*/
 
 footer {
@@ -130,7 +231,7 @@ footer {
    
    }
 /* Whatsapp */
-   .whatsapp{
+   .whatsapp {
     position:fixed;
     width: 6%;
     bottom: 4%;
@@ -146,3 +247,31 @@ footer {
 }
 
 /* Fin Estilios Footer*/
+
+/*pantalla resposive media queris*/
+
+/* Cambia la pantalla de 600 px o menos */
+@media (max-width: 600px) {
+    
+    #btn{
+      display:block;
+    }
+
+    .block_barra_nav{
+        display:none;
+    }
+
+    
+    
+    .logo {
+        min-width: 236px 200px;
+        
+
+    }
+
+    header {
+        position: fixed;
+        z-index: 100;
+    
+    }
+  }
