@@ -6,25 +6,25 @@
   --text-color: #6a6a6a;
   --shadow-color: rgba(0, 0, 0, 0.2);
   --hover-shadow-color: rgba(0, 0, 0, 0.4);
-  }
-  
-  .btn-primary {
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-primary:hover {
-    background-color: var(--hover-color);
-  }
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-color);
+}
 
 .newsletter {
-    background-color: #f2f2f2;
-    padding: 2rem;
-    text-align: center;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  text-align: center;
 }
 
 .newsletter .title {
@@ -55,10 +55,6 @@
   border-radius: 4px;
 }
 
-.newsletter .form-inline .form-control {
-    width: 30rem;
-}
-
 .newsletter .btn-primary {
   width: auto;
 }
@@ -82,5 +78,9 @@
 
   .newsletter .btn-primary {
     width: auto;
+  }
+
+  .newsletter .form-inline .form-control {
+    width: 30rem;
   }
 }
