@@ -41,7 +41,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 600px;
+    max-width: 70%;
     width: 60vh;
     min-height: 60vh;
     inset: 0;
@@ -218,7 +218,7 @@ main{
     margin:20px;
     margin-left: 20%;
     grid-column: 1 /3;
-}
+} 
 
 .caja_formulario_mensaje{
     grid-column: 1 /3;
@@ -287,7 +287,6 @@ input[type="submit"]{
     line-height: 45px;
     font-size: 18px;
     color: white;
-    box-shadow: var(--sombra) inset 2px 2px 3px; 
     box-shadow:  rgba(0, 0, 0, 0.6) inset -2px -2px 3px;
     cursor: pointer;
     outline: none;
@@ -303,7 +302,6 @@ input[type="submit"]:hover{
 }
 
 input[type="submit"]:active{  
-    box-shadow: var(--sombra) -2px -2px 3px;
     box-shadow:  rgba(0, 0, 0, 0.6) inset 2px 2px 3px;
     transition: all 0.3s ease-in-out;
     
@@ -313,22 +311,45 @@ input[type="submit"]:active{
 
 /* Cambia la pantalla de 600 px o menos */
 @media (max-width: 600px){
-    main {
-        height: 70vh;
+    
+    .mi_formulario_login{
+        display: block;
+        position: absolute;
+        top:250px;
+        bottom: 50px;
+        width: 40vh;
+        min-height: 40vh;
+
         
+    }
+
+    .mi_formulario {
+        display: block;
+        position: absolute;
+        top:260px;
+        bottom: 10px;
     }
     
     .formulario {
-        grid-template-columns: 1fr;
-
-
+        display: block;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        max-width: 80vh;
+        min-height: 80vh;
+       
     }
 
-    .caja_formulario_terminos,
-    .caja_formulario_button,
-    .caja_formulario_mensaje {
-        grid-column: 1
-    }
+    .caja_formulario_button{
+        margin:20px;
+        margin-left: 0;
+        /* grid-column: 1 /3; */
+    } 
+
+
+
+    
+    
 
     
 }
