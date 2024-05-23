@@ -28,19 +28,43 @@
 }
 
 .newsletter .title {
-    margin-bottom: 1rem;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.newsletter .description {
+  font-size: 1em;
+  margin-bottom: 20px;
 }
 
 .newsletter .form-inline {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter .form-group {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.newsletter .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .newsletter .form-inline .form-control {
     width: 30rem;
 }
+
+.newsletter .btn-primary {
+  width: auto;
+}
+
 /* Media Queries for responsiveness */
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .newsletter .form-inline {
     flex-direction: row;
     justify-content: center;
