@@ -1,7 +1,7 @@
 :root {
   --primary-color: #b18eb6;
   --secondary-color: #9e8ddb;
-  --background-color: #c7b8ff;
+  --background-color: lightgrey;
   --hover-color: #9e8ddb;
   --text-color: #6a6a6a;
   --shadow-color: rgba(0, 0, 0, 0.2);
@@ -22,7 +22,7 @@
 }
 
 .newsletter {
-  background-color: #f2f2f2;
+  background-color:  lightgrey;
   padding: 2rem;
   text-align: center;
 }
