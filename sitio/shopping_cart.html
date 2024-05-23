@@ -51,6 +51,12 @@
             <a class="header__a login" href="./login.html">Inicia sesión</a>
           </li>
           <!-- Enlace para iniciar sesion -->
+          <li class="header_li">
+            <a class="header__a register" href="./formolario_login.html"
+              >Registrarse</a
+            >
+          </li>
+          <!-- Enlace para iniciar sesion -->
         </ul>
       </nav>
     </header>
@@ -59,9 +65,11 @@
       <section class="container">
         <h2 class="title">Carrito</h2>
         <article class="carrito__vacio" id="carrito-vacio">
+          <h2>Tu Carrito</h2>
           <p>Tu carrito de compras esta vacio.</p>
         </article>
         <article class="carrito__productos oculto" id="carrito-productos">
+          <h2>Tu Carrito</h2>
           <!-- Inicio de producto -->
           <div class="carrito__producto">
             <img src="../img/products/Cactus.jpg" alt="" class="carrito__img" />
@@ -111,7 +119,7 @@
           </div>
           <!-- Fin de producto -->
         </article>
-        <article class="carrito__acciones oculto" id="carrito-acciones">
+        <div class="carrito__acciones oculto" id="carrito-acciones">
           <div class="carrito__acciones__izq">
             <button class="button__vaciar">Vaciar</button>
           </div>
@@ -122,10 +130,10 @@
               <button class="button__cash" id="comprar">Comprar</button>
             </div>
           </div>
-        </article>
-        <article class="carrito__comprado oculto" id="carrito-finalizado">
+        </div>
+        <div class="carrito__comprado oculto" id="carrito-finalizado">
           <p>Muchas gracias por tu compra.</p>
-        </article>
+        </div>
       </section>
     </main>
 
