@@ -21,8 +21,8 @@
 }
 
 body{
-    max-width: 1024px;
-    max-height: 768px;
+    /* max-width: 1024px;
+    max-height: 768px; */
     background: var(--primary-bg);
     font-family: Roboto, sans-serif; /* Fuente para el cuerpo del documento */
    
