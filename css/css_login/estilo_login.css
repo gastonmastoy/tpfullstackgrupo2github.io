@@ -1,103 +1,22 @@
-/* Variables de color */
-:root {
-    --primary-bg: #fff; /* Primary background */
-    --secondary-bg: #b18eb6; /* Secondary background */
-    --primary-font: #000000; /* Primary font */
-    --secondary-font: #fffff; /* Secondary font */
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-body{
-    max-width: 1024px;
-    max-height: 768px;
-
-    background:#f4edfa ;
-    font-family: roboto, sans-serif;
-   
-}
-/* Estilo Header */
-header{
-    background: #f4edfa;
-    display: block;
-    box-sizing: border-box;
-    
-}
-
-.block_logo{
-    text-align:center;
-}
-
-.block_logo .logo{
-    width: auto;
-    height: 200px;
-}
-
-.barra_nav ul{
-    margin: auto;
-    padding:25px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    list-style-type: none;
-
-    
-    
-}
-
-.barra_nav ul li{
-    
-    border: 1px #f4edfa solid transparent;
-    border-radius: 3px;
-    height: 45px;
-    line-height: 45px;
-    transition: .3s ease all;
-
-
-}
-
-.barra_nav ul li a{
-    text-decoration: none;
-    color:rgb(38, 65, 71);
-
-}
-
-.barra_nav ul li:hover{
-    border: 1px #f4edfa solid;
-    box-shadow: rgb(82, 33, 102) 2px 3px 4px 3px;
-
-}
-
-/* Fin Estilos Header*/
-
-
-
 
 main{
     position: relative;
-    box-sizing: border-box;
     height: 100vh;
 }
 
 .mi_formulario{
-
-    width: 80%;
-    height: 90%;
-    position: absolute;
+    max-width: 95vh;
+    width: 800px;
+    min-height: 80vh;
     inset: 0;
     margin: auto;
     background: whitesmoke;
     border-radius: 10px;
-    box-shadow: rgb(68, 29, 112)  4px 4px 6px 4px;
+    box-shadow: var(--sombra)  4px 4px 6px 4px;
 
 }
 
 .titulo{
-    
     text-align:center;
     padding: 5px 0 5px 0;
     border-bottom: 2px solid silver;
@@ -109,30 +28,32 @@ main{
 	grid-template-columns: 1fr 1fr;
 	gap: 10px;
     padding: 0;
-    box-sizing: border-box;
+
 }
 
 /* paguina login*/
 
 .mi_formulario_login{
-    position: absolute;
-    width: 400px;
-    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    width: 60vh;
+    min-height: 60vh;
     inset: 0;
     margin: auto;
     background: whitesmoke;
     border-radius: 10px;
-    box-shadow: rgb(68, 29, 112) 4px 4px 6px 4px;
+    box-shadow: var(--sombra) 4px 4px 6px 4px;
    
 }
 
 
 
 .formulario_login{
-    position: relative;
     display: block;
-	box-sizing: border-box;
-
+    
 }
 
 .caja_formulario_recu_cont_login,
@@ -179,7 +100,6 @@ main{
     width: auto;
     height: auto;
     border:1px;
-  
 
 }
 
@@ -187,6 +107,7 @@ main{
     position: relative;
     border-bottom:1px solid #adadad;
     margin:30px 0;
+    
 
 }
 
@@ -212,17 +133,6 @@ main{
     transition: .5s; 
 }
 
-.formulario__grupo-activo label{
-    position: absolute;
-    top: -5px;
-    left: 5px;
-    color:#adadad;
-    transform: translateY(-50%);
-    font-size:16px;
-    pointer-events: none;
-    transition: .5s;
-}
-
 .formulario__grupo span::before{
     content:'';
     position: absolute;
@@ -239,6 +149,7 @@ main{
 .formulario__grupo input:focus ~ label,
 .formulario__grupo input:valid ~ label {
     top: -5px;
+    font-size: 12px;
     color:#6c3483;
 
 }
@@ -250,9 +161,10 @@ main{
 
 
 
-/* estilo Formulario nuevo mensaje de error y checkpoit*/
+/* estilo Formulario nuevo mensaje de errort*/
 .formulario__input-error {
 	font-size: 12px;
+    color: #F66060;
 	margin-bottom: 0;
 	display: none;
 }
@@ -276,19 +188,19 @@ main{
 /* ----- -----  Estilos para Validacion ----- ----- */
 
 
-.formulario__grupo-correcto .formulario__validacion-estado {
-	color: #1ed12d;
-	opacity: 1;
+.formulario__grupo-correcto {
+    border-radius: 10px;
+	background:rgba(172, 255, 47, 0.144)
+	
 }
 
-.formulario__grupo-incorrecto .formulario__label {
-	color: #bb2929;
+.formulario__grupo-incorrecto {
+    border-radius: 10px;
+	background: rgba(255, 1, 1, 0.164);
+	
 }
 
-.formulario__grupo-incorrecto .formulario__validacion-estado {
-	color: #bb2929;
-	opacity: 1;
-}
+
 
 
 
@@ -303,7 +215,7 @@ main{
     margin:20px;
     margin-left: 20%;
     grid-column: 1 /3;
-}
+} 
 
 .caja_formulario_mensaje{
     grid-column: 1 /3;
@@ -311,43 +223,44 @@ main{
 
 
 
-#formulario__mensaje{
+.caja_formulario_mensaje_error_login{
     width: auto;
     height: 45px;
     text-align: center;
 	line-height: 45px;
     font-size: 16px;
 	background: #F66060;
+    margin-bottom: 15px;
+    padding: 0 5px 0;
 	border-radius: 10px;
 	display: none;
 }
 
-.formulario__mensaje-activo {
+.formulario-mensaje-error {
 	display: block;
+    
 }
 
-.formulario__mensaje p {
-	margin: 0;
-}
 
-.formulario__mensaje-exito {
+
+.caja_formulario_mensaje_exito_login {
     width: auto;
 	height: 45px;
     text-align: center;
 	line-height: 45px;
 	font-size: 16px;
-	color: black;
-    background: #119200;
-	padding: 0 15px;
+	color: rgb(53, 24, 61);
+    background: #1eff0028;
+    margin-bottom: 15px;
+	padding: 0 15px 0;
 	border-radius: 10px;
 	display: none;
-
-	
-    
+   
 }
 
-.formulario__mensaje-exito-activo {
+.formulario-mensaje-exito {
 	display: block;
+
 }
 /* --- ----*/
 
@@ -359,12 +272,19 @@ main{
 input[type="submit"]{
     width: 80%;
     height:45px;
-    border: 1px solid;
+    border: 0;
+    text-shadow: 1px 1px 1px #000;
     background: #6c3483;
+    background-image: linear-gradient(
+        to top left,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 30%,
+        rgba(0, 0, 0, 0));
     border-radius: 10px;
     line-height: 45px;
     font-size: 18px;
     color: white;
+    box-shadow:  rgba(0, 0, 0, 0.6) inset -2px -2px 3px;
     cursor: pointer;
     outline: none;
     
@@ -372,25 +292,61 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     color:aqua;
-    box-shadow: rgb(82, 33, 102) 2px 2px 3px 2px;
-    transition: .5s;
-
+    background: #9a68ad;
+    transition: all 0.3s ease-in-out;
+   
+    
 }
 
-
-
-footer {
-    margin:auto;
-    background-color: var(--secondary-bg); /* Color de fondo del pie de página */
-    color: var(--primary-font); /* Color del texto del pie de página */
-    padding: 20px; /* Espaciado interno del pie de página */
-    text-align: center; /* Alineación del texto centrada */
-    box-sizing:border-box;
+input[type="submit"]:active{  
+    box-shadow:  rgba(0, 0, 0, 0.6) inset 2px 2px 3px;
+    transition: all 0.3s ease-in-out;
+    
 }
 
+/*pantalla resposive media queris*/
 
-/* ----- -----  Mediaqueries ----- ----- 
-@media screen and (max-width: 800px) {
-	
+/* Cambia la pantalla de 600 px o menos */
+@media (max-width: 600px){
+    
+    .mi_formulario_login{
+        display: block;
+        position: absolute;
+        top:250px;
+        bottom: 50px;
+        width: 40vh;
+        min-height: 40vh;
 
-}  */
+        
+    }
+
+    .mi_formulario {
+        display: block;
+        position: absolute;
+        top:260px;
+        bottom: 10px;
+    }
+    
+    .formulario {
+        display: block;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        max-width: 80vh;
+        min-height: 80vh;
+       
+    }
+
+    .caja_formulario_button{
+        margin:20px;
+        margin-left: 0;
+        /* grid-column: 1 /3; */
+    } 
+
+
+
+    
+    
+
+    
+}

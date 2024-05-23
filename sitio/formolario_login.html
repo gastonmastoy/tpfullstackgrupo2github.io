@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario_login</title>
-    <link rel="stylesheet" href="./css/css_login/estilo_login.css">
+    <link rel="stylesheet" href="../css/css_login/estilo_login.css">
+	<link rel="stylesheet" href="../css/css_login/estilos_generales.css">
 </head>
 <body>
     <header>
-        <div class="block_logo">
+        <div class="block_logo" id="page-sidebar">
             
-            <img src="./img/logo/jacaranda_logo.png" alt="Logo Jacarandá" class="logo"> <!-- Logo de la tienda -->
+            <img src="../img/logo/jacaranda_logo.png" alt="Logo Jacarandá" class="logo"> <!-- Logo de la tienda -->
 
         </div>
 
-       <!-- <div class="block_barra_nav">
+        <div class="block_barra_nav">
             
             <nav class="barra_nav">
                 <ul>
-                    <li><a href="#">Inicio</a></li>  
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contacto</a></li> 
-                    <li><a href="#">Carrito</a></li> 
+                    <li><a href="../index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                    <li><a href="../sitio/catalog.html">Catalogo</a></li>
+                    <li><a href="../sitio/contact.html">Contacto</a></li> <!-- Enlace al carrito de compras -->
+                    <li><a href="#">Carrito</a></li> <!-- Enlace a la página de contacto -->
+                    <li><a href="../sitio/products.html">Productos</a></li> <!-- Enlace a la página de productos -->
+                    <li class="activa"><a href="../sitio/formolario_login.html">Registrarme</a></li> <!-- Enlace a la paguina de registro-->
+                    <li><a href="../sitio/login.html">Inicio de Secion</a></li>
+                </ul>
             </nav>
 
-        </div> -->
+        </div>
     </header>
 
     <main>
 
 		<div class="mi_formulario">
 
-			<h1 class="titulo">Crea un Cuenta</h1>
+			<h1 class="titulo">Crea una Cuenta</h1>
 
 			<form action="" class="formulario" id="formulario">
 				
@@ -41,7 +46,6 @@
 
 					<div class="formulario__grupo"id="grupo__usuario">
 						<input type="text" class="formulario__input"   name="usuario" id="usuario"required="">
-						<i class="formulario__validacion-estado fas fa-times-circle"></i>
 						<label for="usuario"class="formulario__label">Nombre de Usario</label>
 					</div>
 
@@ -56,7 +60,6 @@
 
 					<div class="formulario__grupo" id="grupo__nombre">
 						<input type="text" class="formulario__input" name="nombre" id="nombre"required="">
-						<i class="formulario__validacion-estado fas fa-times-circle"></i>
 						<label for="usuario"class="formulario__label">Nombre/s Apellido/s</label>
 					</div>
 					<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos
@@ -70,7 +73,6 @@
 
 					<div class="formulario__grupo" id="grupo__password">
 						<input type="password" class="formulario__input" name="password" id="password"required="">
-						<i class="formulario__validacion-estado fas fa-times-circle"></i>
 						<label for="password"class="formulario__label">Contraseña</label>
 					</div>
 					<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
@@ -83,7 +85,6 @@
 
 					<div class="formulario__grupo" id="grupo__password2">
 						<input type="password" class="formulario__input" name="password2" id="password2"required="">
-						<i class="formulario__validacion-estado fas fa-times-circle"></i>
 						<label for="password2"class="formulario__label">Contraseña</label>
 					</div>
 			        <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
@@ -97,7 +98,6 @@
 					<div class="formulario__grupo" id="grupo__correo">
 						
 						<input type="email" class="formulario__input" name="correo" id="correo"required="">
-						<i class="formulario__validacion-estado fas fa-times-circle"></i>
 						<label for="correo" class="formulario__label">Correo Electrónico</label>
 						
 					</div>
@@ -112,7 +112,6 @@
 					<div class="formulario__grupo" id="grupo__telefono">
 						
 						<input type="text" class="formulario__input" name="telefono" id="telefono"required="" >
-						<i class="formulario__validacion-estado fas fa-times-circle"></i>
 						<label for="telefono" class="formulario__label">Teléfono</label>
 	
 					</div>
@@ -126,7 +125,7 @@
 					
 					<label class="formulario__label">
 						
-						<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" required="">
+						<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos"aria-checked="true" required="">
 						Acepto los Terminos y Condiciones
 					
 					</label>
@@ -143,20 +142,19 @@
                 
                 <!--mensaje exito-->
                 
-                <div class="caja_formulario_mensaje" id="mensaje_exito">
+                <div class="caja_formulario_mensaje_exito_login caja_formulario_mensaje" id="mensaje-exito">
                     
-                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                    <p>Formulario enviado exitosamente!!!</p>
                     
                 </div>
 
                 <!--mensaje error-->
                 
-                <div class="caja_formulario_mensaje" id="formulario__mensaje">
-					    
-                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                <div class="caja_formulario_mensaje_error_login caja_formulario_mensaje" id="mensaje-error">
+                    
+                    <p><b>Error:</b> Por favor rellenar correctamente. </p>
                 
                 </div>
-				
 
 			</form>
 	
@@ -164,12 +162,47 @@
 		</div>
 
     </main>
-    <footer>
-        <p>&copy; 2024 E-commerce de cualquier cosa</p> <!-- Pie de página con información de derechos de autor -->
-        <img src="./img/logo/jacaranda_white.png" alt="Logo Jacarandá" class="logoFooter"> <!-- Logo de la tienda -->
-    </footer>
-	<script src="./js/formulario_login.js"></script>
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
+	<aside>
+        <!-- boton sidebar -->
+        <div id="btn">
+            <div id='top'></div>
+            <div id='middle'></div>
+            <div id='bottom'></div>
+        </div>
+        <div class= "block_sidebar">
+            <nav id="caja">
+                <ul id="items">
+                    <li class="item"><a href="../index.html">Inicio</a></li>
+                    <li class="item"><a href="../sitio/catalog.html">Catalogo</a></li>
+                    <li class="item" ><a href="../sitio/contact.html">Contacto</a></li> 
+                    <li class="item"><a href="#">Carrito</a></li>
+                    <li class="item"><a href="../sitio/products.html">Productos</a></li>
+                    <li class="item"><a href="../sitio/formolario_login.html">Registrarme</a></li> 
+                    <li class="item"><a href="../sitio/login.html">Ini. Secion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <footer>
+		<p>&copy;  2024 E-commerce Plants & Gifts</p>  <!-- Derechos de autor -->
+		<img src="../img/logo/jacaranda_white.png" alt="Logo Jacarandá" class="logoFooter"> <!-- Logo de la tienda -->
+		<br>
+		<a class="redsoc" href="https://www.instagram.com/" target="_blank">
+			<i class="fa-brands fa-square-instagram"></i>
+		</a>
+		<a class="redsoc" href="https://www.facebook.com/" target="_blank">
+			<i class="fa-brands fa-square-facebook"></i>
+		</a>
+		<a class="redsoc" href="https://www.linkedin.com/" target="_blank">
+			<i class="fa-brands fa-linkedin"></i>
+		</a> 
+		<a href="https://wa.me/1131771533" target="_blank">
+			<img class="whatsapp" alt="WhatsApp" src="../img/whatsapp/WhatsApp_icon.png" >
+		</a>
+	</footer>
+	<script src="../js/sidebar.js"></script>
+	<script src="../js/formulario_login.js"></script>
+	<script src="https://kit.fontawesome.com/1b956063ae.js" crossorigin="anonymous"></script> <!-- Iconos redes sociales-->
 </body>
 </html>

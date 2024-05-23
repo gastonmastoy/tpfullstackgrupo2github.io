@@ -1,0 +1,277 @@
+:root {
+    --black: #343838;
+    --blue: #00DFFC;
+    --dullWhite: #f6f6f6;
+    --easing: cubic-bezier(.6, .05, .28, .91);
+    --primary-bg: #fff; /* Primary background */
+    --secondary-bg: #b18eb6; /* Secondary background */
+    --primary-font: #000000; /* Primary font */
+    --secondary-font: #fffff; /* Secondary font */
+    --fondo-opcional: #f4edfa; /* fondo opcional al principal*/
+    --sombra-opcional: rgb(82, 33, 102); /* sombra opcional --sombra */
+    --sombra: #b18eb6; /*sombra suave */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1024px;
+    max-height: 768px;
+    background: var(--primary-bg);
+    font-family: Roboto, sans-serif; /* Fuente para el cuerpo del documento */
+   
+}
+/* Estilo Header */
+header{
+    background: var(--primary-bg);
+    display: block;
+    
+}
+
+.block_logo{
+    text-align:center;
+}
+
+.block_logo .logo{
+    width: auto;
+    height: 200px;
+}
+
+.logo {
+    max-width: 80%; /* 50% of the viewport width */
+}
+
+.block_barra_nav{
+    display:block;
+}
+
+.barra_nav ul{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding:25px;
+    gap: 25px;
+    list-style-type: none;
+    
+    
+    
+}
+
+.barra_nav ul li{
+    border: 1px #f4edfa solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    
+    
+}
+
+.barra_nav ul li a{
+    padding: 5px;
+    text-decoration: none;
+    color:rgb(2, 73, 88);
+
+}
+
+.barra_nav ul li:hover{
+    border: 1px #f4edfa solid;
+    box-shadow: var(--sombra) 3px 3px 4px ;
+    cursor: pointer;
+    outline: none;
+}
+
+.barra_nav ul li:active {
+   
+    box-shadow:  rgba(0, 0, 0, 0.6) inset 2px 2px 4px;
+
+}
+
+.activa {
+    border: 1px #f4edfa solid;
+    box-shadow: var(--sombra) 3px 3px 4px ;
+    
+}
+/* Fin Estilos Header*/
+
+
+/*    sidebar   */
+
+
+#btn {
+    display: none;
+	position: fixed;
+	z-index: 150;
+	top: 25px;
+	left: 20px;
+	cursor: pointer;
+	transition: left 500ms var(--easing);
+	div {
+		width: 35px;
+		height: 2px;
+		margin-bottom: 8px;
+		background-color: var(--primary-font);
+		transition: transform 500ms var(--easing), opacity 500ms, background-color 250ms;
+	}
+}
+
+#btn.active {
+   
+	left: 140px;
+	div {
+		background-color: var(--black);
+	}
+	#top {
+		transform: translateY(10px) rotate(-135deg);
+	}
+	#middle {
+		opacity: 0;
+		transform: rotate(135deg);
+	}
+	#bottom {
+		transform: translateY(-10px) rotate(-45deg);
+	}
+}
+
+#caja {
+	position: fixed;
+	z-index: 100;
+	overflow: auto;
+	top: 10px;
+	left: -275px;
+	width: 180px;
+	opacity: 0;
+	padding: 20px 0px;
+	height: 80%;
+	background-color: var(--sombra);
+	color: var(--black);
+	transition: all 350ms var(--easing);
+}
+
+#caja.active {
+	left: 0px;
+	opacity: 1;
+}
+
+#items {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	.item {
+		position: relative;
+		cursor: pointer;
+		font-size: 2em;
+		padding: 15px 30px;
+		transition: all 250ms;
+		&:hover {
+			padding: 15px 45px;
+			background-color: transparentize(var(--black), .8);
+		}
+	}
+}
+
+.item a {
+  font-size: 16px;
+  padding: 5px;
+  text-decoration: none;
+  color: whitesmoke; 
+}
+
+
+
+#btn, #btn * {
+	will-change: transform;
+}
+
+#caja {
+	will-change: transform, opacity;
+}
+/*fin sidebar  */
+
+/* Inicio Estilos Footer*/
+
+footer {
+    background-color: var(--secondary-bg); /* Color de fondo del pie de página */
+    color: var(--primary-font); /* Color del texto del pie de página */
+    padding: 20px; /* Espaciado interno del pie de página */
+    text-align: center; /* Alineación del texto centrada */
+}
+
+.logoFooter{
+    max-width: 45%;
+}
+
+/* Redes sociales */
+.redsoc {
+    color: white;
+    font-size: 4vw;
+    margin:3%;
+    width: 6%;
+    bottom:4%;
+    transition: all 0.3s ease-in;
+}
+/* Cambia color icono Redes sociales */
+.redsoc:hover{
+    animation-name: cambiarColor;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+/* Prueba Cambia colores icono Redes sociales */
+@keyframes cambiarColor {
+    0% {color: red;}
+    50% {color: green;}
+    75% {color: blue;}
+    100% {color: black;}
+   
+   }
+/* Whatsapp */
+   .whatsapp {
+    position:fixed;
+    width: 6%;
+    bottom: 4%;
+    right: 4%;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+/* Whatsapp cambia tamaño cuando se pasa por arriba */
+.whatsapp:hover{
+    transform: scale(1.5, 1.5);
+    transition: all 0.3s ease-in-out;
+    /* width: 5%; */
+}
+
+/* Fin Estilios Footer*/
+
+/*pantalla resposive media queris*/
+
+/* Cambia la pantalla de 600 px o menos */
+@media (max-width: 600px) {
+    
+    #btn{
+      display:block;
+    }
+
+    .block_barra_nav{
+        display:none;
+    }
+
+    
+    
+    .logo {
+        min-width: 236px 200px;
+        
+
+    }
+
+    header {
+        position: fixed;
+        z-index: 100;
+    
+    }
+  }
