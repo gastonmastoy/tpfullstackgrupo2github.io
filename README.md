@@ -90,12 +90,13 @@ Cada archivo CSS se encarga de estilizar diferentes partes del sitio web:
   
 
 ###Colaboradores
-```
-GASTON ROBERTO MASTOY 1 - Repositorio : https://github.com/gastonmastoy
-LUCAS EZEQUIEL ACOSTA 2 - Repositorio : https://github.com/ALucasE
-EMILIO JAVIER AQUINO 3 - Repositorio : https://github.com/3m1l10j4v13r4qu1n0
-FRANCISCO JOSE RENDO 4 - Repositorio : https://github.com/FrankRendo
-```
+
+## Colaboradores
+
+- **Gaston Roberto Mastoy:** [GitHub](https://github.com/gastonmastoy)
+- **Lucas Ezequiel Acosta:** [GitHub](https://github.com/ALucasE)
+- **Emilio Javier Aquino:** [GitHub](https://github.com/3m1l10j4v13r4qu1n0)
+- **Francisco Jose Rendo:** [GitHub](https://github.com/FrankRendo)
 
 
 ## [Ver despliegue](https://gastonmastoy.github.io/tpfullstackgrupo2github.io/)
