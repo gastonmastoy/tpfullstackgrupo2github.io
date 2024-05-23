@@ -1,29 +1,32 @@
-/* Todos los estilos para el Newsletter */
+/* Todos los estilos para el Formulario */
+*{
+  font-family: Roboto, sans-serif; 
+}
 
-form{
-    border: 1px solid lightgray;
-    border-radius: 1px;
-    background-color: lightgrey;
+form {
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    background-color: #f2f2f2;
     padding: 1%;
 }
 
-input[type=text] {
-    padding: 0.5%;
-    margin: 0.5%;
-    width: 60%;
+/* input[type=text] {
+  padding: 0.5%;
+  margin: 0.5%;
+  width: 60%;
 }
 
 input[type=email], [type=tel] {
-    padding: 0.5%;
-    margin: 0.5%;
-    width: 30%;
+  padding: 0.5%;
+  margin: 0.5%;
+  width: 30%;
 }
 
 textarea {
     width: 80%;
     padding: 0.5%;
     margin: 0.5%;
-}
+} */
 
 .container {
     display: grid; /* Habilito grid */
@@ -39,3 +42,69 @@ textarea {
     margin: 2px;
     border: 1px solid #ccc;
 }
+
+.btn-primary {
+    font-size: 15px;
+    width: 20%;
+    height: 40px;
+    background-color: #b18eb6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #9e8ddb;
+  }
+
+  /* .form-group input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  } */
+
+  .form-name {
+    font-size: 15px;
+    width: 80%;
+    height: 28px; /* Ajusta la altura según desees */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5%;
+    margin: 0.5%;
+  }
+
+  .form-email {
+    font-size: 15px;
+    width: 60%;
+    height: 28px; /* Ajusta la altura según desees */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5%;
+    margin: 0.5%;
+  }
+
+  .form-phone {
+    font-size: 15px;
+    width: 40%;
+    height: 28px; /* Ajusta la altura según desees */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5%;
+    margin: 0.5%;
+  }
+
+  .form-message {
+    font-size: 15px;
+
+    width: 80%;
+    max-width: 98%;
+    height: 60px;
+    max-height: 90px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5%;
+    margin: 0.5%;
+  }
