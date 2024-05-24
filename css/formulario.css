@@ -4,10 +4,10 @@
 }
 
 form {
-    border: 1px solid #f2f2f2;
-    border-radius: 4px;
-    background-color: #f2f2f2;
-    padding: 1%;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  padding: 1%;
 }
 
 /* input[type=text] {
@@ -44,7 +44,6 @@ textarea {
 }
 
 .btn-primary {
-<<<<<<< HEAD
     background-color: #b18eb6;
     color: #fff;
     border: none;
@@ -55,26 +54,12 @@ textarea {
 
   .btn-primary:hover {
     background-color: #9e8ddb;;
-=======
-  font-size: 15px;
-  width: 20%;
-  height: 40px;
-  background-color: #b18eb6;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
+  }
 
-.btn-primary:hover {
-  background-color: #9e8ddb;
-}
-
-   .form-name {
+  .form-name {
     font-size: 15px;
     width: 80%;
-    height: 28px; /* Ajusta la altura según desees */
+    height: 25px; /* Ajusta la altura según desees */
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 0.5%;
@@ -84,7 +69,7 @@ textarea {
   .form-email {
     font-size: 15px;
     width: 60%;
-    height: 28px; /* Ajusta la altura según desees */
+    height: 25px; /* Ajusta la altura según desees */
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 0.5%;
@@ -94,7 +79,7 @@ textarea {
   .form-phone {
     font-size: 15px;
     width: 40%;
-    height: 28px; /* Ajusta la altura según desees */
+    height: 25px; /* Ajusta la altura según desees */
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 0.5%;
@@ -104,12 +89,11 @@ textarea {
   .form-message {
     font-size: 15px;
     width: 80%;
-    max-width: 98%;
-    height: 60px;
-    max-height: 90px;
+    max-width: 95%;
+    height: 50px;
+    max-height: 70px;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 0.5%;
     margin: 0.5%;
->>>>>>> Frank1
   }
