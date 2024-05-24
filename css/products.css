@@ -7,6 +7,9 @@
   --shadow-color: rgba(0, 0, 0, 0.2);
   --hover-shadow-color: rgba(0, 0, 0, 0.4);
 }
+body {
+  font-size: large;
+}
 
 main {
   display: flex;
@@ -131,6 +134,9 @@ main {
 }
 /*  ------ Mediano ------ */
 @media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: x-large;
+  }
   .card__container {
     width: calc(50% - 40px); /* Ocupar el 50% del ancho con márgenes */
   }

@@ -10,7 +10,7 @@
 
 .btn-primary {
   background-color: #b18eb6;
-  width: 10%;
+  width: 15%;
   color: #fff;
   border: none;
   padding: 5px 20px;
@@ -23,7 +23,7 @@
 }
 
 .newsletter {
-  background-color:  lightgrey;
+  background-color: lightgrey;
   padding: 2rem;
   text-align: center;
 }
@@ -72,20 +72,22 @@
 } */
 
 /* Media Queries for responsiveness */
-/* @media (min-width: 768px) {
+@media (max-width: 480px) {
   .newsletter .form-inline {
     flex-direction: row;
     justify-content: center;
   }
 
-  .newsletter .form-group {
+  .newsletter .formulario {
     margin-right: 10px;
     margin-bottom: 0;
     width: auto;
   }
 
-  .newsletter .form-group input {
+  .newsletter .formulario input {
     width: auto;
+    text-align: center;
+    margin: 1rem;
   }
 
   .newsletter .btn-primary {
@@ -95,4 +97,32 @@
   .newsletter .form-inline .form-control {
     width: 30rem;
   }
-} */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .newsletter .form-inline {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .newsletter .formulario {
+    margin-right: 10px;
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  .newsletter .formulario input {
+    width: auto;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .newsletter .btn-primary {
+    width: auto;
+  }
+
+  .newsletter .form-inline .form-control {
+    width: 30rem;
+  }
+}

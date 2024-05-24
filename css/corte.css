@@ -1,45 +1,60 @@
-
 /* Media queries para diferentes tamaños de pantalla */
 @media only screen and (max-width: 768px) {
-    /* Estilos para tablet */
-    header {
-        padding: 10px;
-    }
+  /* Estilos para tablet */
+  header {
+    padding: 10px;
+  }
 
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
 
-    main {
-        padding: 10px;
-    }
+  main {
+    padding: 10px;
+  }
 
-    footer {
-        padding: 10px;
-    }
+  footer {
+    padding: 10px;
+  }
+
+  /* Whatsapp */
+  .whatsapp {
+    position: fixed;
+    width: 10%;
+    bottom: 5.5%;
+    right: 3%;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+  }
+  /* Whatsapp cambia tamaño cuando se pasa por arriba */
+  .whatsapp:hover {
+    transform: scale(1.5, 1.5);
+    transition: all 0.3s ease-in-out;
+    /* width: 5%; */
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    /* Estilos para celular */
-    header {
-        padding: 5px;
-    }
+  /* Estilos para celular */
+  header {
+    padding: 5px;
+  }
 
-    nav ul {
-        text-align: center;
-    }
+  nav ul {
+    text-align: center;
+  }
 
-    nav ul li {
-        display: block;
-        margin: 0;
-    }
+  nav ul li {
+    display: block;
+    margin: 0;
+  }
 
-    main {
-        padding: 5px;
-    }
+  main {
+    padding: 5px;
+  }
 
-    footer {
-        padding: 5px;
-    }
+  footer {
+    padding: 5px;
+  }
 }
