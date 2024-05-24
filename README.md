@@ -43,6 +43,7 @@ plants-and-gifts/
 ├── img/
 │   ├── carrousel/
 │   ├── logo/
+│   ├── products/
 │   └── whatsapp/
 │
 └── js/
