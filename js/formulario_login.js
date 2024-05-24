@@ -2,8 +2,6 @@ const formulario = document.getElementById('formulario');
 
 // capturamos los datos del formulario
 
-
-
 const expresiones = { //Expresiones Regulares:
 
     usuario: /^[a-zA-Z0-9\_\-]{4,16}$/,     // Letras, numeros, guion y guion_bajo
@@ -11,9 +9,8 @@ const expresiones = { //Expresiones Regulares:
     password: /^.{4,12}$/,                  // 4 a 12 digitos.
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     telefono: /^\d{7,14}$/                  // 7 a 14 numeros.
-   
-
 }
+
 //bandera formulario
 const campos= {
     usuario: false,
@@ -32,7 +29,6 @@ function validarCheck(input){
     }else{
         console.log('no chequeado')
     }
-
 }
 
 function validarPassword2(campo){
@@ -58,9 +54,6 @@ function validarPassword2(campo){
     }
 }
 
-
-
-
 function validarCampo(expresion,input,campo) {
     if(input == '' || !expresion.test(input)){
         console.log('no funciona');
@@ -79,15 +72,10 @@ function validarCampo(expresion,input,campo) {
         .classList.remove('formulario__input-error-activo');
         campos[campo] = true;
     }
-
-
-
 }
 
 function validarFormulario(formulario,expresiones){
-
     const formData = new FormData(formulario);
-    
     for( i of formData.entries()) {
         console.log(`clave: ${i[0]}, valor: ${i[1]}`);
         
@@ -113,18 +101,11 @@ function validarFormulario(formulario,expresiones){
             case 'terminos':
                 validarCheck(i[1]);
                 break;
-        
-           
         }
-
-      
-    
-           
     }
 }
+
 function mostrarMensaje(campos){
-   
-    
     if(campos.usuario && campos.password && campos.password2 && campos.nombre && campos.correo && campos.telefono && campos.terminos) {
         console.log('es verdarero');
         document.getElementById('mensaje-error')
@@ -148,20 +129,12 @@ function mostrarMensaje(campos){
         console.log('es falso');
         document.getElementById('mensaje-error')
         .classList.add('formulario-mensaje-error');
-    
     }
 }
 
 formulario.addEventListener('submit',function(evento) {
-
     evento.preventDefault();
     validarFormulario(formulario,expresiones,campos);
     console.log(campos);
     mostrarMensaje(campos);
-    
-    
 });
-    
-    
-
-
