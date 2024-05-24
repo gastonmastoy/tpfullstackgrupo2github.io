@@ -89,7 +89,7 @@ Cada archivo CSS se encarga de estilizar diferentes partes del sitio web:
 - `validarNewsletter.js`: Contiene la lógica para la validación del formulario de newsletter.
   
 ## Colaboradores, ver GitHub
-- [Gaston Roberto Mastoy](https://github.com/gastonmastoy target="_blank")
+- [Gaston Roberto Mastoy](https://github.com/gastonmastoy)
 - [Lucas Ezequiel Acosta](https://github.com/ALucasE)
 - [Emilio Javier Aquino](https://github.com/3m1l10j4v13r4qu1n0)
 - [Francisco Jose Rendo](https://github.com/FrankRendo)
