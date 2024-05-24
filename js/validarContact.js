@@ -11,8 +11,8 @@ formulario.addEventListener('submit', (event) => {
     const email = emailInput.value.trim();
     if (validateName(name)) {
         if (validateEmail(email)) {
-                alert('Nombre y Correo electrónico Okay');
-                mensajeError.textContent = 'Tu pregunta sera respondida a la brevedad';
+                // alert('Nombre y Correo elec  trónico Okay');
+                mensajeError.textContent = 'Nombre y Mail Correcto. Tu pregunta sera respondida a la brevedad';
                 mensajeError.style.color = 'green';
                 formulario.reset(); // Limpia formulario
             } else {
@@ -43,3 +43,19 @@ function validateName(name) {
     }
         return true;
 }
+
+const messageArea = document.getElementById('message-area');
+const maxWords = 50;
+
+  messageArea.addEventListener('input', () => {
+    const words = messageArea.value.trim().split(' ');
+    if (words.length > maxWords) {
+      // Exceeded maximum word count
+    //   alert('Has superado el límite de 50 palabras.');
+      mensajeError.textContent = 'Has superado el límite de 50 palabras';
+      mensajeError.style.color = 'red';
+
+      // Optionally, reset the message or truncate it to the limit
+      messageArea.value = words.slice(0, maxWords).join(' ');
+    }
+  });

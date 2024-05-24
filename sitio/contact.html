@@ -24,11 +24,9 @@
   <body>
     <header class="header">
       <!-- Logo de la tienda -->
-      <img
-        src="../img/logo/jacaranda_logo.png"
-        alt="Logo Jacarandá"
-        class="logo"
-      />
+      <a href="../index.html">
+        <img src="../img/logo/jacaranda_logo.png " alt="Logo Jacarandá" class="logo"/>
+      </a>
       <nav class="header__nav">
         <ul class="header_ul">
           <li class="header_li">
@@ -66,14 +64,16 @@
     <main>
       <div class="container">
         <div class="item1">
-          <h1>Contacto</h1>
+          <h2 class="title">Contacto</h2>
           <p>
             Para preguntas referentes a un pedido, más información sobre
             nuestros productos o porque necesitás contactar con nosotras
             ¡escribinos!
           </p>
           <form id="formulario">
+            
             <label for="name"></label>
+<<<<<<< HEAD
             <input type="text" id="name" name="name" placeholder="Nombre:" required ><br />
 
             <label for="email"></label>
@@ -85,12 +85,30 @@
             <label for="message"></label>
             <textarea type="text" name="message" placeholder="Ingrese su mensaje" ></textarea>
             <br />
+=======
+            <input type="text" class="form-name" id="name" name="name" placeholder="Nombre:" required>
+            <br>
+
+            <label for="email"></label>
+            <input type="email" class="form-email" id="email" name="email" placeholder="Email:" required>
+            <br>
+
+            <label for="phone"></label>
+            <input type="tel" class="form-phone" id="phone" name="phone" placeholder="Teléfono:" required>
+            <br>
+
+            <label for="message"></label>
+            <textarea type="text" class="form-message" name="message" placeholder="Ingresá tu mensaje (max 50 palabras):" id="message-area" required></textarea>
+            <br>
+
+>>>>>>> Frank1
             <button type="submit" class="btn-primary">Enviar</button>
           </form>
           <p id="errorMensaje"></p>
         </div>
+        
         <div class="item2">
-          <h1>Sucursales</h1>
+          <h2 class="title">Sucursales</h2>
           <p>
             Almagro:
             <a href="https://maps.app.goo.gl/mfT64DXEXKvNtEaY7" target="_blank"
@@ -124,18 +142,18 @@
           ></iframe>
         </div>
       </div>
+
       <script src="../js/validarContact.js"></script>
+
     </main>
 
     <footer>
       <p>&copy; 2024 E-commerce Plants & Gifts</p>
       <!-- Derechos de autor -->
-      <img
-        src="../img/logo/jacaranda_white.png"
-        alt="Logo Jacarandá"
-        class="logoFooter"
-      />
       <!-- Logo de la tienda -->
+      <a href="../index.html">
+        <img src="../img/logo/jacaranda_white.png " alt="Logo Jacarandá" class="logoFooter"/>
+      </a>
       <br />
       <a class="redsoc" href="https://www.instagram.com/" target="_blank">
         <i class="fa-brands fa-square-instagram"></i>

@@ -10,13 +10,6 @@
   --hover-color-secundary: #c7b8ff;
 }
 
-/* Estilos generales */
-body {
-  font-family: Roboto, sans-serif; /* Fuente para el cuerpo del documento */
-  margin: 0; /* Elimina los márgenes predeterminados */
-  padding: 0; /* Elimina el relleno predeterminado */
-}
-
 .header {
   background-color: var(--primary-bg); /* Color de fondo del encabezado */
   color: var(--primary-font); /* Color del texto del encabezado */
@@ -85,8 +78,28 @@ body {
   border-radius: 0.25rem;
 }
 
+body {
+  font-family: Roboto, sans-serif; /* Fuente para el cuerpo del documento */
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 0; /* Elimina el rellen:root {
+  --primary-bg: #fff; /* Primary background */
+  --secondary-bg: #b18eb6; /* Secondary background */
+  --primary-font: #000000; /* Primary font */
+  --secondary-font: #fffff; /* Secondary font */
+  --primary-color: #b18eb6;
+  --secondary-color: #9e8ddb;
+  --hover-color-primary: #9e8ddb;
+  --hover-color-secundary: #c7b8ff;
+}
+
 main {
   padding: 20px; /* Espaciado interno del contenido principal */
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 footer {

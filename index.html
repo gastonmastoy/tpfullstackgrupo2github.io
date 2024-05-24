@@ -49,11 +49,10 @@
   <body>
     <header class="header">
       <!-- Logo de la tienda -->
-      <img
-        src="./img/logo/jacaranda_logo.png"
-        alt="Logo Jacarandá"
-        class="logo"
-      />
+      <a href="./index.html">
+        <img src="./img/logo/jacaranda_logo.png" alt="Logo Jacarandá" class="logo"/>
+      </a>
+      <!-- <img src="./img/logo/jacaranda_logo.png" alt="Logo Jacarandá" class="logo"/> -->
       <nav class="header__nav">
         <ul class="header_ul">
           <li class="header_li">
@@ -224,34 +223,32 @@
 
       <!-- Espacio para el newsletter -->
       <article class="newsletter">
-        <h2 class="title">Suscríbete a nuestro newsletter</h2>
-        <p class="description">
-          Recibe descuentos y promociones exclusivas en tu correo electrónico
-        </p>
-        <form class="form-inline">
-          <div class="form-group mx-sm-3">
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="Ingresá tu email"
-              required
-            />
-          </div>
+        <h2  class="title">Suscríbete a nuestro newsletter</h2>
+        <p class="description">Recibe descuentos y promociones exclusivas en tu correo electrónico</p>
+        <form>
+          <label for="email"></label>
+          <input type="email" class="form-email" id="email" placeholder="Ingresá tu Email:" required>
           <button type="submit" class="btn-primary">Suscribirme</button>
         </form>
+
+        <!-- <form class="form-inline">
+          <git div class="form-group mx-sm-3">
+            <input type="email" class="form-control" id="email" placeholder="Ingresá tu email" required>
+          </div>
+          <button type="submit" class="btn-primary">Suscribirme</button>
+        </form> -->
+
         <p id="errorMensaje"></p>
       </article>
+
     </main>
 
     <footer>
       <p>&copy; 2024 E-commerce Plants & Gifts</p>
       <!-- Derechos de autor -->
-      <img
-        src="./img/logo/jacaranda_white.png"
-        alt="Logo Jacarandá"
-        class="logoFooter"
-      />
+      <a href="../index.html">
+        <img src="../img/logo/jacaranda_white.png " alt="Logo Jacarandá" class="logoFooter"/>
+      </a>
       <!-- Logo de la tienda -->
       <br />
       <a class="redsoc" href="https://www.instagram.com/" target="_blank">
