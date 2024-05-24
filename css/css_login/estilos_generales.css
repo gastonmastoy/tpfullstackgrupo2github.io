@@ -20,13 +20,13 @@
     box-sizing: border-box;
 }
 
-body{
+/* body{
     max-width: 1024px;
     max-height: 768px;
     background: var(--primary-bg);
     font-family: Roboto, sans-serif; /* Fuente para el cuerpo del documento */
-   
-}
+} */
+
 /* Estilo Header */
 header{
     background: var(--primary-bg);

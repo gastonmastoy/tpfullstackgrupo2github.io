@@ -65,56 +65,93 @@
     </header>
 
     <main>
-        <div class="mi_formulario_login">
-            <h1 class="titulo">Inicio de secion</h1>
-            <form action="" class="formulario_login" id="formulario_login">
+     
+        <div class="mi_formulario">
+			<h1 class="titulo">Crea una Cuenta</h1>
+			<form action="" class="formulario" id="formulario">
 
                 <!-- Grupo: Usuario -->
-                <div class="caja_formulario" id="caja_usuario_login">
-                    <div class="formulario__grupo" id="grupo__usuario_login">
-                        <input type="text"class="formulario__input" id="usuario_login"name="usuario_login"required="">
-                        <!--<i class="formulario__validacion-estado fas fa-times-circle"></i>-->
-                        <label for="usuario_login">Nombre de Usuario</label>
-                    </div>
-                    <p class="formulario__input-error" >El usuario tiene que ser de 4 a 16 dígitos
-                        y solo puede contener numeros, letras y guion bajo.</p>
-                </div>
+				<div class="caja_formulario" id="caja_usuario">
+					<div class="formulario__grupo"id="grupo__usuario">
+						<input type="text" class="formulario__input"   name="usuario" id="usuario"required="">
+						<label for="usuario"class="formulario__label">Nombre de Usario</label>
+					</div>
+					<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos
+						 y solo puede contener numeros, letras y guion bajo.</p>
+				</div>
+	
+				<!-- Grupo: Nombre -->
+				<div class="caja_formulario" id="caja_nombre">
+					<div class="formulario__grupo" id="grupo__nombre">
+						<input type="text" class="formulario__input" name="nombre" id="nombre"required="">
+						<label for="usuario"class="formulario__label">Nombre/s Apellido/s</label>
+					</div>
+					<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos
+						 y solo puede contener numeros, letras y guion bajo.</p>
+				</div>
+	
+				<!-- Grupo: Contraseña -->
+				<div class="caja_formulario" id="caja_password">
+					<div class="formulario__grupo" id="grupo__password">
+						<input type="password" class="formulario__input" name="password" id="password"required="">
+						<label for="password"class="formulario__label">Contraseña</label>
+					</div>
+					<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+				</div>
 
-                <!-- Grupo: Contraseña -->
-                <div class="caja_formulario" id="caja_password_login">
-                    <div class="formulario__grupo" id="grupo__password_login">
-                        <input type="password"class="formulario__input" name="password_login" id="password_login"required="">
-                        <!--<i class="formulario__validacion-estado fas fa-times-circle"></i>-->
-                        <label for="password_login">Contraseña</label>
-                    </div>
-                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
-                </div>
+				<!-- Grupo: Contraseña 2 -->
+				<div class="caja_formulario" id="caja_password2">
+					<div class="formulario__grupo" id="grupo__password2">
+						<input type="password" class="formulario__input" name="password2" id="password2"required="">
+						<label for="password2"class="formulario__label">Contraseña</label>
+					</div>
+			        <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+				</div>
+	
+				<!-- Grupo: Correo Electronico -->
+				<div class="caja_formulario" id="caja_correo">
+					<div class="formulario__grupo" id="grupo__correo">
+						<input type="email" class="formulario__input" name="correo" id="correo"required="">
+						<label for="correo" class="formulario__label">Correo Electrónico</label>
+					</div>
+					<p class="formulario__input-error">El correo solo puede contener letras, numeros,
+						 puntos, guiones y guion bajo.</p>
+				</div>
 
-                <!--link para recuperar contraseña-->
-                <div class="caja_formulario_recu_cont_login" id="recuperar_contrasenia">
-                    <a href="#">¿Olvido su Contraseña?</a>
-                </div>
+				<!-- Grupo: Teléfono -->
+				<div class="caja_formulario" id="caja_telefono">
+					<div class="formulario__grupo" id="grupo__telefono">
+						<input type="text" class="formulario__input" name="telefono" id="telefono"required="" >
+						<label for="telefono" class="formulario__label">Teléfono</label>
+					</div>
+				    <p class="formulario__input-error">El telefono solo puede contener numeros y
+						 el maximo son 14 dígitos.</p>
+				</div>
 
-                <!-- Boton submit Enviar-->
-				<div class="caja_formulario_button_login" id="button_submit_login">
-					<input type="submit" class="formulario__login_btn" value="Enviar"></input>
+				<!-- Grupo: Terminos y Condiciones -->
+				<div class="caja_formulario_terminos" id="grupo__terminos">
+					<label class="formulario__label">
+						<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos"aria-checked="true" required="">
+						Acepto los Terminos y Condiciones
+					</label>
+				</div>
+				
+				<!-- Boton submit Enviar-->
+				<div class="caja_formulario_button" id="button_submit_login">
+					<input type="submit" class="formulario__login_btn" value="Enviar"required=""></input>
 				</div>
                 
-                <div class="caja_formulario_link_reg_login" id="link_formulario_registro">
-                    <a href="./formolario_login.html">Quiero registrarme</a>
-                </div>
-                
                 <!--mensaje exito-->
-                <div class="caja_formulario_mensaje_exito_login" id="mensaje-exito">
+                <div class="caja_formulario_mensaje_exito_login caja_formulario_mensaje" id="mensaje-exito">
                     <p>Formulario enviado exitosamente!!!</p>
                 </div>
 
                 <!--mensaje error-->
-                <div class="caja_formulario_mensaje_error_login" id="mensaje-error">
+                <div class="caja_formulario_mensaje_error_login caja_formulario_mensaje" id="mensaje-error">
                     <p><b>Error:</b> Por favor rellenar correctamente. </p>
                 </div>
-            </form>
-        </div>
+			</form>
+		</div>
     </main>
 
     <footer>
