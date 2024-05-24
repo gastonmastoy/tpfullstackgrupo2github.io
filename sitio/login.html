@@ -62,12 +62,12 @@
     <main>
         <div class="mi_formulario_login">
             <h1 class="titulo">Inicio de secion</h1>
-            <form action="" class="formulario_login" id="formulario_login">
+            <form method ="get" class="formulario_login" id="formulario_login">
 
                 <!-- Grupo: Usuario -->
                 <div class="caja_formulario" id="caja_usuario_login">
                     <div class="formulario__grupo" id="grupo__usuario_login">
-                        <input type="text"class="formulario__input" id="usuario_login"name="usuario_login"required="">
+                        <input type="text"class="formulario__input" id="usuario_login"name="usuario_login" required="true">
                         <!--<i class="formulario__validacion-estado fas fa-times-circle"></i>-->
                         <label for="usuario_login">Nombre de Usuario</label>
                     </div>
@@ -78,7 +78,7 @@
                 <!-- Grupo: Contraseña -->
                 <div class="caja_formulario" id="caja_password_login">
                     <div class="formulario__grupo" id="grupo__password_login">
-                        <input type="password"class="formulario__input" name="password_login" id="password_login"required="">
+                        <input type="password"class="formulario__input" name="password_login" id="password_login" required="true">
                         <!--<i class="formulario__validacion-estado fas fa-times-circle"></i>-->
                         <label for="password_login">Contraseña</label>
                     </div>
@@ -92,7 +92,7 @@
 
                 <!-- Boton submit Enviar-->
 				<div class="caja_formulario_button_login" id="button_submit_login">
-					<input type="submit" class="formulario__login_btn" value="Enviar"></input>
+					<input type="submit" class="formulario__login_btn" value="Enviar">
 				</div>
                 
                 <div class="caja_formulario_link_reg_login" id="link_formulario_registro">
@@ -134,6 +134,7 @@
     </footer>
 
     <script src="../js/numero_carrito.js"></script>
+    <script src="../js/login.js"></script>
 
   </body>
 </html>
