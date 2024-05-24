@@ -182,8 +182,6 @@ header{
   color: whitesmoke; 
 }
 
-
-
 #btn, #btn * {
 	will-change: transform;
 }
@@ -260,18 +258,13 @@ footer {
     .block_barra_nav{
         display:none;
     }
-
-    
     
     .logo {
         min-width: 236px 200px;
-        
-
     }
 
     header {
         position: fixed;
         z-index: 100;
-    
     }
   }
