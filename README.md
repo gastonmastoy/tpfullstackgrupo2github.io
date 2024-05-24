@@ -89,13 +89,13 @@ Cada archivo CSS se encarga de estilizar diferentes partes del sitio web:
 - `validarNewsletter.js`: Contiene la lógica para la validación del formulario de newsletter.
   
 ## Colaboradores
-- **Gaston Roberto Mastoy:** [GitHub](https://github.com/gastonmastoy)
-- **Lucas Ezequiel Acosta:** [GitHub](https://github.com/ALucasE)
-- **Emilio Javier Aquino:** [GitHub](https://github.com/3m1l10j4v13r4qu1n0)
-- **Francisco Jose Rendo:** [GitHub](https://github.com/FrankRendo)
+- **Gaston Roberto Mastoy:** [GitHub](https://github.com/gastonmastoy target="_blank")
+- **Lucas Ezequiel Acosta:** [GitHub](https://github.com/ALucasE target="_blank")
+- **Emilio Javier Aquino:** [GitHub](https://github.com/3m1l10j4v13r4qu1n0 target="_blank")
+- **Francisco Jose Rendo:** [GitHub](https://github.com/FrankRendo target="_blank")
 
 
-## [Ver despliegue](https://gastonmastoy.github.io/tpfullstackgrupo2github.io/)
+## [Ver despliegue](https://gastonmastoy.github.io/tpfullstackgrupo2github.io/ target="_blank")
 Realizado con GitHub Pages
 
 
