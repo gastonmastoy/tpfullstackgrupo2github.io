@@ -32,7 +32,6 @@ plants-and-gifts/
 │
 ├── css/
 │   ├── cards.css
-│   ├── carrousel.css
 │   ├── calltoaction.css
 │   ├── corte.css
 │   ├── estilos.css
@@ -47,12 +46,23 @@ plants-and-gifts/
 │   └── whatsapp/
 │
 └── js/
-    └── validarNewsletter.js
+    ├──  validarNewsletter.js
+    ├──  formulario_login.js
+    ├──  login.js
+    ├──  numero_carrito.js
+    ├──  products.js
+    ├──  shopping_cart.js
+    ├──  validarContact.js
+    └── numero_carrito.js
+
 
 sitio/
 │
 ├── contact.html
 ├── products.html
+├── shopping_cart.html
+├── login.html
+├── formulario_login.html
 └── index.html
 
 README.md
@@ -75,7 +85,6 @@ Este archivo contiene la estructura principal del sitio web. Incluye:
 Cada archivo CSS se encarga de estilizar diferentes partes del sitio web:
 
 - `cards.css`: Estilos para las tarjetas de productos.
-- `carrousel.css`: Estilos para el carrousel de imágenes.
 - `calltoaction.css`: Estilos para las llamadas a la acción.
 - `corte.css`: Estilos específicos de corte.
 - `estilos.css`: Estilos generales del sitio web.
@@ -87,6 +96,20 @@ Cada archivo CSS se encarga de estilizar diferentes partes del sitio web:
 ### JavaScript
 
 - `validarNewsletter.js`: Contiene la lógica para la validación del formulario de newsletter.
+ 
+- `validarContact.js`: Contiene la lógica para la validación del formulario de contacto.
+ 
+- `numero_carrito.js`: Contiene la lógica para actualizar el número de ítems en el carrito de compras.
+
+- `login.js`: Contiene la lógica para la validación del formulario de inicio de sesión.
+
+- `products.js`: Maneja la lista de productos y el carrito de compras, incluyendo funciones para agregar productos al carrito y renderizar la lista de productos y el carrito en el DOM.
+
+- `shopping_cart.js`: Administra la funcionalidad del carrito de compras.
+
+- `numero_carrito.js`:contiene una función para agregar productos al carrito de compras y actualizar el número de elementos en el carrito en el HTML
+
+-`formulario_login.js`: Este archivo contiene la lógica de validación del formulario de registro de usuarios. 
   
 ## Colaboradores, ver GitHub
 - [Gaston Roberto Mastoy](https://github.com/gastonmastoy)
