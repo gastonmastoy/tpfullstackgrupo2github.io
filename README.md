@@ -109,9 +109,10 @@ Cada archivo CSS se encarga de estilizar diferentes partes del sitio web:
 - `shopping_cart.js`: Administra la funcionalidad del carrito de compras.
 
 - `numero_carrito.js`:contiene una función para agregar productos al carrito de compras y actualizar el número de elementos en el carrito en el HTML
+ 
+- `formulario_login.js`: Este archivo contiene la lógica de validación del formulario de registro de usuarios. 
 
--`formulario_login.js`: Este archivo contiene la lógica de validación del formulario de registro de usuarios. 
-  
+
 ## Colaboradores, ver GitHub
 - [Gaston Roberto Mastoy](https://github.com/gastonmastoy)
 - [Lucas Ezequiel Acosta](https://github.com/ALucasE)
