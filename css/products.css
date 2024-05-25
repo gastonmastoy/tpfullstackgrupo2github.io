@@ -7,9 +7,6 @@
   --shadow-color: rgba(0, 0, 0, 0.2);
   --hover-shadow-color: rgba(0, 0, 0, 0.4);
 }
-body {
-  font-size: large;
-}
 
 main {
   display: flex;

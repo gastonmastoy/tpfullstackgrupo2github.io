@@ -9,6 +9,9 @@
   --hover-color-primary: #9e8ddb;
   --hover-color-secundary: #c7b8ff;
 }
+body {
+  font-size: large;
+}
 
 .header {
   background-color: var(--primary-bg); /* Color de fondo del encabezado */
