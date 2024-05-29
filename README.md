@@ -124,4 +124,4 @@ Cada archivo CSS se encarga de estilizar diferentes partes del sitio web:
 Realizado con GitHub Pages
 
 ## [Ver despliegue Netlify "Plants & Gifts"](https://6651fba67d71395b4649f8ea--cheery-pony-c60427.netlify.app)
-Realizado con netlify
+Realizado con Netlify
