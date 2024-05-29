@@ -38,6 +38,8 @@ textarea {
 }
 
 .item1, .item2 {
+    width: 95%; /* Makes the container take up 95% width */
+    margin: 0 auto; /* Centers the container horizontally */
     padding: 10px;
     margin: 2px;
     border: 1px solid #ccc;
