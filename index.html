@@ -16,16 +16,15 @@
 
     <!--BOOTSTRAP-->
     <!-- Latest compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/estilos.css" />
     <link rel="stylesheet" href="./css/corte.css" />
     <link rel="stylesheet" href="./css/cards.css" />
     <link rel="stylesheet" href="./css/logo.css" />
-    <link rel="stylesheet" href="./css/calltoaction.css" />
+    <!-- <link rel="stylesheet" href="./css/calltoaction.css" /> -->
     <link rel="stylesheet" href="./css/newsletter.css" />
 
     <!-- jQuery library -->
@@ -37,7 +36,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script src="./js/validarNewsletter.js"></script>
+
   </head>
 
   <body>
@@ -224,18 +223,18 @@
         <p class="description">
           Recibe descuentos y promociones exclusivas en tu correo electrónico
         </p>
-        <form class="formulario">
+        <form>
           <label for="email"></label>
           <input type="email" class="form-email" id="email" placeholder="Ingresá tu Email:" required>
           <button type="submit" class="btn-primary">Suscribirme</button>
-
+        </form>
           <!-- <form class="form-inline">
             <div class="form-group mx-sm-3">
               <input type="email" class="form-control" id="email" placeholder="Ingresá tu email" required>
             </div>
             <button type="submit" class="btn-primary">Suscribirme</button>
           </form> -->
-        </form>
+       
         <p id="errorMensaje"></p>
       </article>
     </main>
@@ -270,6 +269,7 @@
       </a>
     </footer>
 
+    <script src="./js/validarNewsletter.js"></script>
     <script src="./js/numero_carrito.js"></script>
   </body>
 </html>

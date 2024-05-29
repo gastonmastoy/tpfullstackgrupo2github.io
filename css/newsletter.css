@@ -10,9 +10,9 @@
 
 .btn-primary {
   background-color: #b18eb6;
-  width: 15%;
-  color: #fff;
-  border: none;
+  width: 11%;
+  /* color: #fff; */
+  border: #fff;
   padding: 5px 20px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
@@ -38,20 +38,20 @@
   margin: 0.5%;
 }
 
-/* .title {
+.title {
   font-size: 1.3rem;
   font-weight: bold;
   line-height: 1.2;
-} */
+}
 
-/* .newsletter .title {
+.newsletter .title {
   font-size: 1.5em;
   margin-bottom: 10px;
-} */
+}
 
-/* .newsletter .description {
+.newsletter .description {
   margin-bottom: 20px;
-} */
+}
 
 /* .newsletter .form-inline {
   display: flex;
@@ -61,7 +61,7 @@
 
 /* .newsletter .form-group {
   margin-bottom: 10px;
-  width: 100%;
+  width: 40%;
 } */
 
 /* .newsletter .form-group input {
@@ -70,6 +70,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 } */
+
 
 /* Media Queries for responsiveness */
 @media (max-width: 480px) {

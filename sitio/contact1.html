@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/estilos.css">
-    <!-- <link rel="stylesheet" href="../css/corte.css"> -->
+    <link rel="stylesheet" href="../css/corte.css">
     <link rel="stylesheet" href="../css/logo.css">
-    <!-- <link rel="stylesheet" href="./css/products.css"> -->
+    <link rel="stylesheet" href="./css/products.css">
     <link rel="stylesheet" href="../css/formulario.css">
   </head>
   <body>
@@ -62,52 +62,56 @@
 
     <main>
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2 class="title">Contacto</h2>
-            <p>
-              Para preguntas referentes a un pedido, más información sobre
-              nuestros productos o porque necesitás contactar con nosotras
-              ¡escribinos!
-            </p>
-            <form id="formulario">
-              
-              <label for="name"></label>
-              <input type="text" class="form-name" id="name" name="name" placeholder="Nombre:" required><br>
+        <div class="item1">
+          <h2 class="title">Contacto</h2>
+          <p>
+            Para preguntas referentes a un pedido, más información sobre
+            nuestros productos o porque necesitás contactar con nosotras
+            ¡escribinos!
+          </p>
+          <form id="formulario">
+            
+            <label for="name"></label>
+            <input type="text" class="form-name" id="name" name="name" placeholder="Nombre:" required><br>
 
-              <label for="email"></label>
-              <input type="email" class="form-email" id="email" name="email" placeholder="Email:" required><br>
+            <label for="email"></label>
+            <input type="email" class="form-email" id="email" name="email" placeholder="Email:" required><br>
 
-              <label for="phone"></label>
-              <input type="tel" class="form-phone" id="phone" name="phone" placeholder="Telefono:" required><br>
+            <label for="phone"></label>
+            <input type="tel" class="form-phone" id="phone" name="phone" placeholder="Telefono:" required><br>
 
-              <!-- <label for="message"></label> -->
-              <textarea class="form-message" name="message" placeholder="Ingresá tu mensaje (Max 50 palabras):" required></textarea>
-              <br>
-              <button type="submit" class="btn-primary">Enviar</button>
-            </form>
-            <p id="errorMensaje"></p>
-          </div>
-        
-          <div class="col">
-            <h2 class="title">Sucursales</h2>
-            <p>
-              Almagro:
-              <a href="https://maps.app.goo.gl/mfT64DXEXKvNtEaY7" target="_blank"
-                >Francisco Acuña de Figueroa 582 - Caba</a
-              >
-            </p>
-            <p>
-              Olivos:
-              <a href="https://maps.app.goo.gl/DyYvaf7W3aViL5yV7" target="_blank"
-                >Carlos Villate 2608 - Bs As</a
-              >
-            </p>
+            <!-- <label for="message"></label> -->
+            <textarea class="form-message" name="message" placeholder="Ingresá tu mensaje (Max 50 palabras):" required></textarea>
             <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0122715039693!2d-58.4228057!3d-34.6038512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca63f9525f93%3A0x158cdcd371c92804!2sFaitful%20Viveros!5e0!3m2!1ses-419!2sar!4v1717014330439!5m2!1ses-419!2sar" width="200" height="170" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <button type="submit" class="btn-primary">Enviar</button>
+          </form>
+          <p id="errorMensaje"></p>
+        </div>
+        
+        <div class="item2">
+          <h2 class="title">Sucursales</h2>
+          <p>
+            Almagro:
+            <a href="https://maps.app.goo.gl/mfT64DXEXKvNtEaY7" target="_blank"
+              >Francisco Acuña de Figueroa 582 - Caba</a
+            >
+          </p>
+          <p>
+            Olivos:
+            <a href="https://maps.app.goo.gl/DyYvaf7W3aViL5yV7" target="_blank"
+              >Carlos Villate 2608 - Bs As</a
+            >
+          </p>
+          <br>
+          <!-- <div class="iframe-container">       -->
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3287.249340012447!2d-58.502648!3d-34.5219103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb12f802f2877%3A0xc09ca2c385bd5b59!2sVivero%20Verde%20Olivos!5e0!3m2!1ses-419!2sar!4v1717013932328!5m2!1ses-419!2sar" width="200" height="170" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0122715039693!2d-58.4228057!3d-34.6038512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca63f9525f93%3A0x158cdcd371c92804!2sFaitful%20Viveros!5e0!3m2!1ses-419!2sar!4v1717014330439!5m2!1ses-419!2sar" width="200" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <!-- </div> -->
+          <!-- <div class="iframe-container"> -->
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3287.249340012447!2d-58.502648!3d-34.5219103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb12f802f2877%3A0xc09ca2c385bd5b59!2sVivero%20Verde%20Olivos!5e0!3m2!1ses-419!2sar!4v1717013932328!5m2!1ses-419!2sar" width="200" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- </div> -->
         </div>
       </div>
     </main>
