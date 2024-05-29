@@ -10,45 +10,12 @@ form {
   padding: 2%;
 }
 
-/* input[type=text] {
-  padding: 0.5%;
-  margin: 0.5%;
-  width: 60%;
-}
-
-input[type=email], [type=tel] {
-  padding: 0.5%;
-  margin: 0.5%;
-  width: 30%;
-}
-
-textarea {
-    width: 80%;
-    padding: 0.5%;
-    margin: 0.5%;
-} */
-
-/* .container {
-    width: 97%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-} */
-
 .col {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
   margin: 5px;
 }
-
-/* .item1, .item2 {
-    width: 95%;
-    margin: 0 auto;
-    padding: 10px;
-    margin: 2px;
-    border: 1px solid #ccc;
-} */
 
 .btn-primary {
   background-color: #b18eb6;
@@ -105,3 +72,36 @@ textarea {
   padding: 0.5%;
   margin: 1.5%;
 }
+
+/* .item1, .item2 {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    margin: 2px;
+    border: 1px solid #ccc;
+} */
+
+/* input[type=text] {
+  padding: 0.5%;
+  margin: 0.5%;
+  width: 60%;
+}
+
+input[type=email], [type=tel] {
+  padding: 0.5%;
+  margin: 0.5%;
+  width: 30%;
+}
+
+textarea {
+    width: 80%;
+    padding: 0.5%;
+    margin: 0.5%;
+} */
+
+/* .container {
+    width: 97%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} */
